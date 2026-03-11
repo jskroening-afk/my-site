@@ -8,5 +8,32 @@
   </head>
   <body>
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+    <script>
+      CMS.init({
+        config: {
+          backend: {
+            name: 'github',
+            repo: 'jskroening-afk/my-site',
+            branch: 'main',
+            auth_type: 'pkce',
+            app_id: '0v23li8AKKvGeM2fR0Uo'
+          },
+          media_folder: 'public/uploads',
+          public_folder: '/uploads',
+          collections: [{
+            name: 'posts',
+            label: 'Blog Posts',
+            folder: 'content/posts',
+            create: true,
+            fields: [
+              {label: 'Title', name: 'title', widget: 'string'},
+              {label: 'Date', name: 'date', widget: 'datetime'},
+              {label: 'Cover Image', name: 'coverImage', widget: 'image', required: false},
+              {label: 'Body', name: 'body', widget: 'markdown'}
+            ]
+          }]
+        }
+      })
+    </script>
   </body>
 </html>
