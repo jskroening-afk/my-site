@@ -3,5 +3,9 @@ export default function KeystaticLayout({
 }: {
   children: React.ReactNode
 }) {
-  return <>{children}</>
+  return (
+    <div style={{ background: '#fff', color: '#000', minHeight: '100vh' }}>
+      {children}
+    </div>
+  )
 }
