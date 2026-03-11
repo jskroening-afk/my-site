@@ -96,31 +96,31 @@ export default async function BlogPostPage({
       <section className="px-6 lg:px-8 pt-40 pb-12 lg:pt-48 lg:pb-16">
         <div className="max-w-3xl mx-auto">
           {/* Breadcrumb */}
-          <div className="flex items-center gap-2 mb-10 text-xs text-[#7A7470]">
+          <div className="flex items-center gap-2 mb-10 text-xs text-[#7a8099]">
             <Link href="/writing" className="hover:text-[#8B7A6A] transition-colors">
               Writing
             </Link>
             <span>/</span>
-            <span className="text-[#111008]">{post.category}</span>
+            <span className="text-[#f5f0e8]">{post.category}</span>
           </div>
 
           <div className="flex items-center gap-3 mb-6">
             <span className="text-[10px] uppercase tracking-widest text-[#8B7A6A] font-medium">
               {post.category}
             </span>
-            <span className="text-[#E0D8CF]">·</span>
-            <span className="text-[10px] text-[#7A7470]">{post.readTime}</span>
+            <span className="text-[#3a4a6b]">·</span>
+            <span className="text-[10px] text-[#7a8099]">{post.readTime}</span>
           </div>
 
-          <h1 className="font-serif text-4xl md:text-5xl lg:text-[3.25rem] font-normal leading-[1.15] text-[#111008] mb-8">
+          <h1 className="font-serif text-4xl md:text-5xl lg:text-[3.25rem] font-normal leading-[1.15] text-[#f5f0e8] mb-8">
             {post.title}
           </h1>
 
-          <div className="flex items-center gap-5 pb-10 border-b border-[#E0D8CF]">
-            <div className="w-10 h-10 rounded-full bg-[#E0D8CF]" />
+          <div className="flex items-center gap-5 pb-10 border-b border-[#1e2538]">
+            <div className="w-10 h-10 rounded-full bg-[#1a2035]" />
             <div>
-              <p className="text-sm font-medium text-[#111008]">Your Name</p>
-              <p className="text-xs text-[#7A7470] mt-0.5">{post.date}</p>
+              <p className="text-sm font-medium text-[#f5f0e8]">Your Name</p>
+              <p className="text-xs text-[#7a8099] mt-0.5">{post.date}</p>
             </div>
           </div>
         </div>
@@ -129,16 +129,16 @@ export default async function BlogPostPage({
       {/* ── Hero Image ── */}
       <section className="px-6 lg:px-8 py-0">
         <div className="max-w-3xl mx-auto">
-          <div className="aspect-[16/9] bg-[#E0D8CF] w-full" />
+          <div className="aspect-[16/9] bg-[#1a2035] w-full" />
         </div>
       </section>
 
       {/* ── Article Body ── */}
       <article className="px-6 lg:px-8 py-14 lg:py-20">
         <div className="max-w-3xl mx-auto prose-custom">
-          <div className="space-y-6 text-[#111008] leading-[1.8] text-[1rem]">
+          <div className="space-y-6 text-[#f5f0e8] leading-[1.8] text-[1rem]">
 
-            <p className="text-lg text-[#7A7470] leading-relaxed font-normal">
+            <p className="text-lg text-[#7a8099] leading-relaxed font-normal">
               {post.excerpt} Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
               ex ea commodo consequat.
@@ -151,7 +151,7 @@ export default async function BlogPostPage({
               natus error sit voluptatem accusantium doloremque laudantium.
             </p>
 
-            <h2 className="font-serif text-2xl lg:text-3xl font-normal text-[#111008] pt-4">
+            <h2 className="font-serif text-2xl lg:text-3xl font-normal text-[#f5f0e8] pt-4">
               Lorem ipsum dolor sit amet
             </h2>
 
@@ -170,7 +170,7 @@ export default async function BlogPostPage({
             </p>
 
             <blockquote className="border-l-2 border-[#8B7A6A] pl-6 py-1 my-8">
-              <p className="font-serif text-xl lg:text-2xl font-normal text-[#111008] italic leading-relaxed">
+              <p className="font-serif text-xl lg:text-2xl font-normal text-[#f5f0e8] italic leading-relaxed">
                 &ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua.&rdquo;
               </p>
@@ -183,7 +183,7 @@ export default async function BlogPostPage({
               praesentium voluptatum deleniti atque corrupti.
             </p>
 
-            <h2 className="font-serif text-2xl lg:text-3xl font-normal text-[#111008] pt-4">
+            <h2 className="font-serif text-2xl lg:text-3xl font-normal text-[#f5f0e8] pt-4">
               Consectetur adipiscing elit
             </h2>
 
@@ -201,7 +201,7 @@ export default async function BlogPostPage({
               labore et dolore magna aliqua. Ut enim ad minim veniam.
             </p>
 
-            <h2 className="font-serif text-2xl lg:text-3xl font-normal text-[#111008] pt-4">
+            <h2 className="font-serif text-2xl lg:text-3xl font-normal text-[#f5f0e8] pt-4">
               Sed do eiusmod tempor
             </h2>
 
@@ -219,14 +219,14 @@ export default async function BlogPostPage({
           </div>
 
           {/* Tags */}
-          <div className="mt-12 pt-8 border-t border-[#E0D8CF] flex flex-wrap gap-2">
-            <span className="text-[10px] text-[#7A7470] uppercase tracking-widest font-medium mr-2 pt-1.5">
+          <div className="mt-12 pt-8 border-t border-[#1e2538] flex flex-wrap gap-2">
+            <span className="text-[10px] text-[#7a8099] uppercase tracking-widest font-medium mr-2 pt-1.5">
               Tagged:
             </span>
             {[post.category, 'Lorem Ipsum', 'Dolor Sit'].map((tag) => (
               <span
                 key={tag}
-                className="px-3 py-1.5 border border-[#E0D8CF] text-xs text-[#7A7470] hover:border-[#8B7A6A] hover:text-[#8B7A6A] transition-colors cursor-pointer"
+                className="px-3 py-1.5 border border-[#1e2538] text-xs text-[#7a8099] hover:border-[#8B7A6A] hover:text-[#8B7A6A] transition-colors cursor-pointer"
               >
                 {tag}
               </span>
@@ -236,22 +236,22 @@ export default async function BlogPostPage({
       </article>
 
       {/* ── Author Box ── */}
-      <section className="px-6 lg:px-8 py-12 border-t border-[#E0D8CF] bg-[#F0EBE4]">
+      <section className="px-6 lg:px-8 py-12 border-t border-[#1e2538] bg-[#0f1525]">
         <div className="max-w-3xl mx-auto">
           <div className="flex flex-col sm:flex-row gap-6 items-start">
-            <div className="w-16 h-16 rounded-full bg-[#E0D8CF] flex-shrink-0" />
+            <div className="w-16 h-16 rounded-full bg-[#1a2035] flex-shrink-0" />
             <div>
               <p className="text-[10px] uppercase tracking-widest text-[#8B7A6A] font-medium mb-2">
                 Written by
               </p>
-              <p className="font-serif text-xl font-normal text-[#111008] mb-3">Your Name</p>
-              <p className="text-sm text-[#7A7470] leading-relaxed mb-4">
+              <p className="font-serif text-xl font-normal text-[#f5f0e8] mb-3">Your Name</p>
+              <p className="text-sm text-[#7a8099] leading-relaxed mb-4">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
               </p>
               <Link
                 href="/about"
-                className="text-sm font-medium text-[#111008] border-b border-[#111008] pb-0.5 hover:text-[#8B7A6A] hover:border-[#8B7A6A] transition-colors"
+                className="text-sm font-medium text-[#f5f0e8] border-b border-[#f5f0e8] pb-0.5 hover:text-[#8B7A6A] hover:border-[#8B7A6A] transition-colors"
               >
                 More about me →
               </Link>
@@ -261,17 +261,17 @@ export default async function BlogPostPage({
       </section>
 
       {/* ── Post Navigation ── */}
-      <section className="px-6 lg:px-8 py-0 border-t border-[#E0D8CF]">
+      <section className="px-6 lg:px-8 py-0 border-t border-[#1e2538]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2">
           {prevPost ? (
             <Link
               href={`/writing/${prevPost.slug}`}
-              className="flex flex-col p-8 lg:p-12 hover:bg-[#F0EBE4] transition-colors border-b md:border-b-0 md:border-r border-[#E0D8CF] group"
+              className="flex flex-col p-8 lg:p-12 hover:bg-[#0f1525] transition-colors border-b md:border-b-0 md:border-r border-[#1e2538] group"
             >
-              <span className="text-[10px] uppercase tracking-widest text-[#7A7470] font-medium mb-3">
+              <span className="text-[10px] uppercase tracking-widest text-[#7a8099] font-medium mb-3">
                 ← Previous
               </span>
-              <span className="font-serif text-lg font-normal text-[#111008] leading-snug group-hover:text-[#8B7A6A] transition-colors">
+              <span className="font-serif text-lg font-normal text-[#f5f0e8] leading-snug group-hover:text-[#8B7A6A] transition-colors">
                 {prevPost.title}
               </span>
             </Link>
@@ -282,12 +282,12 @@ export default async function BlogPostPage({
           {nextPost ? (
             <Link
               href={`/writing/${nextPost.slug}`}
-              className="flex flex-col p-8 lg:p-12 hover:bg-[#F0EBE4] transition-colors md:text-right group"
+              className="flex flex-col p-8 lg:p-12 hover:bg-[#0f1525] transition-colors md:text-right group"
             >
-              <span className="text-[10px] uppercase tracking-widest text-[#7A7470] font-medium mb-3">
+              <span className="text-[10px] uppercase tracking-widest text-[#7a8099] font-medium mb-3">
                 Next →
               </span>
-              <span className="font-serif text-lg font-normal text-[#111008] leading-snug group-hover:text-[#8B7A6A] transition-colors">
+              <span className="font-serif text-lg font-normal text-[#f5f0e8] leading-snug group-hover:text-[#8B7A6A] transition-colors">
                 {nextPost.title}
               </span>
             </Link>

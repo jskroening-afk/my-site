@@ -70,18 +70,18 @@ export default function WritingPage() {
   return (
     <>
       {/* ── Header ── */}
-      <section className="px-6 lg:px-8 pt-40 pb-16 lg:pt-48 lg:pb-20 border-b border-[#E0D8CF]">
+      <section className="px-6 lg:px-8 pt-40 pb-16 lg:pt-48 lg:pb-20 border-b border-[#1e2538]">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8">
             <div>
               <p className="text-[10px] uppercase tracking-widest text-[#8B7A6A] font-medium mb-6">
                 Writing
               </p>
-              <h1 className="font-serif text-5xl md:text-6xl font-normal leading-[1.1] text-[#111008]">
+              <h1 className="font-serif text-5xl md:text-6xl font-normal leading-[1.1] text-[#f5f0e8]">
                 Ideas worth keeping.
               </h1>
             </div>
-            <p className="text-sm text-[#7A7470] leading-relaxed max-w-xs md:text-right">
+            <p className="text-sm text-[#7a8099] leading-relaxed max-w-xs md:text-right">
               Essays, frameworks, and observations on strategy, leadership, and doing meaningful work.
             </p>
           </div>
@@ -93,8 +93,8 @@ export default function WritingPage() {
                 key={cat}
                 className={`px-4 py-1.5 text-xs font-medium border transition-colors cursor-pointer ${
                   i === 0
-                    ? 'bg-[#111008] text-[#F8F6F2] border-[#111008]'
-                    : 'bg-transparent text-[#7A7470] border-[#E0D8CF] hover:border-[#8B7A6A] hover:text-[#8B7A6A]'
+                    ? 'bg-[#f5f0e8] text-[#0a0e1a] border-[#f5f0e8]'
+                    : 'bg-transparent text-[#7a8099] border-[#1e2538] hover:border-[#8B7A6A] hover:text-[#8B7A6A]'
                 }`}
               >
                 {cat}
@@ -112,7 +112,7 @@ export default function WritingPage() {
               <article key={post.slug} className="group flex flex-col">
                 {/* Image placeholder */}
                 <Link href={`/writing/${post.slug}`} className="block mb-5">
-                  <div className="aspect-[3/2] bg-[#E0D8CF] group-hover:bg-[#D4C5B6] transition-colors" />
+                  <div className="aspect-[3/2] bg-[#1a2035] group-hover:bg-[#252d45] transition-colors" />
                 </Link>
 
                 {/* Meta */}
@@ -120,28 +120,28 @@ export default function WritingPage() {
                   <span className="text-[10px] uppercase tracking-widest text-[#8B7A6A] font-medium">
                     {post.category}
                   </span>
-                  <span className="text-[#E0D8CF]">·</span>
-                  <span className="text-[10px] text-[#7A7470]">{post.readTime}</span>
+                  <span className="text-[#3a4a6b]">·</span>
+                  <span className="text-[10px] text-[#7a8099]">{post.readTime}</span>
                 </div>
 
                 {/* Title */}
                 <Link href={`/writing/${post.slug}`}>
-                  <h2 className="font-serif text-xl font-normal text-[#111008] leading-snug mb-3 group-hover:text-[#8B7A6A] transition-colors">
+                  <h2 className="font-serif text-xl font-normal text-[#f5f0e8] leading-snug mb-3 group-hover:text-[#8B7A6A] transition-colors">
                     {post.title}
                   </h2>
                 </Link>
 
                 {/* Excerpt */}
-                <p className="text-sm text-[#7A7470] leading-relaxed flex-1 mb-5">
+                <p className="text-sm text-[#7a8099] leading-relaxed flex-1 mb-5">
                   {post.excerpt}
                 </p>
 
                 {/* Date + Read link */}
-                <div className="flex items-center justify-between border-t border-[#E0D8CF] pt-4">
-                  <span className="text-xs text-[#7A7470]">{post.date}</span>
+                <div className="flex items-center justify-between border-t border-[#1e2538] pt-4">
+                  <span className="text-xs text-[#7a8099]">{post.date}</span>
                   <Link
                     href={`/writing/${post.slug}`}
-                    className="text-xs font-medium text-[#111008] hover:text-[#8B7A6A] transition-colors"
+                    className="text-xs font-medium text-[#f5f0e8] hover:text-[#8B7A6A] transition-colors"
                   >
                     Read →
                   </Link>
@@ -153,18 +153,18 @@ export default function WritingPage() {
       </section>
 
       {/* ── Newsletter CTA ── */}
-      <section className="px-6 lg:px-8 py-20 lg:py-28 bg-[#F0EBE4] border-t border-[#E0D8CF]">
+      <section className="px-6 lg:px-8 py-20 lg:py-28 bg-[#0f1525] border-t border-[#1e2538]">
         <div className="max-w-xl mx-auto text-center">
           <p className="text-[10px] uppercase tracking-widest text-[#8B7A6A] font-medium mb-5">
             Never Miss a Post
           </p>
-          <h2 className="font-serif text-3xl lg:text-4xl font-normal text-[#111008] mb-5 leading-tight">
+          <h2 className="font-serif text-3xl lg:text-4xl font-normal text-[#f5f0e8] mb-5 leading-tight">
             Get new writing delivered to your inbox.
           </h2>
-          <p className="text-sm text-[#7A7470] leading-relaxed mb-8">
+          <p className="text-sm text-[#7a8099] leading-relaxed mb-8">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Join 0,000+ readers.
           </p>
-          <Link href="/" className="inline-block px-8 py-4 bg-[#111008] text-[#F8F6F2] text-sm font-medium hover:bg-[#8B7A6A] transition-colors">
+          <Link href="/" className="inline-block px-8 py-4 bg-[#f5f0e8] text-[#0a0e1a] text-sm font-medium hover:bg-[#8B7A6A] hover:text-[#f5f0e8] transition-colors">
             Subscribe →
           </Link>
         </div>

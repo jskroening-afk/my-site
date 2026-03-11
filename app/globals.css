@@ -8,13 +8,13 @@
   }
 
   body {
-    background-color: #F8F6F2;
-    color: #111008;
+    background-color: #0a0e1a;
+    color: #f5f0e8;
   }
 
   ::selection {
-    background-color: #E0D8CF;
-    color: #111008;
+    background-color: #1e2538;
+    color: #f5f0e8;
   }
 }
 

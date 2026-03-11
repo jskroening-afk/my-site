@@ -68,19 +68,19 @@ export default function ExecutiveCoachingPage() {
   return (
     <>
       {/* ── Hero ── */}
-      <section className="px-6 lg:px-8 pt-40 pb-20 lg:pt-48 lg:pb-28 bg-[#111008]">
+      <section className="px-6 lg:px-8 pt-40 pb-20 lg:pt-48 lg:pb-28 bg-[#06080f]">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
             <div className="lg:col-span-8">
               <p className="text-[10px] uppercase tracking-widest text-[#8B7A6A] font-medium mb-7">
                 Services · 02
               </p>
-              <h1 className="font-serif text-5xl md:text-6xl lg:text-[4rem] font-normal leading-[1.1] text-[#F8F6F2]">
+              <h1 className="font-serif text-5xl md:text-6xl lg:text-[4rem] font-normal leading-[1.1] text-[#f5f0e8]">
                 Executive Coaching
               </h1>
             </div>
             <div className="lg:col-span-4">
-              <p className="text-[#7A7470] leading-relaxed text-sm">
+              <p className="text-[#7a8099] leading-relaxed text-sm">
                 One-on-one coaching for leaders who want to operate at their highest level and
                 build the clarity, confidence, and capability to navigate what comes next.
               </p>
@@ -90,20 +90,20 @@ export default function ExecutiveCoachingPage() {
       </section>
 
       {/* ── Overview ── */}
-      <section className="px-6 lg:px-8 py-20 lg:py-28 border-b border-[#E0D8CF]">
+      <section className="px-6 lg:px-8 py-20 lg:py-28 border-b border-[#1e2538]">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
             <div className="lg:col-span-5">
-              <div className="aspect-[4/5] bg-[#E0D8CF] w-full" />
+              <div className="aspect-[4/5] bg-[#1a2035] w-full" />
             </div>
             <div className="lg:col-span-6 lg:col-start-7 lg:pt-4">
               <p className="text-[10px] uppercase tracking-widest text-[#8B7A6A] font-medium mb-6">
                 Overview
               </p>
-              <h2 className="font-serif text-3xl lg:text-4xl font-normal text-[#111008] mb-7 leading-tight">
+              <h2 className="font-serif text-3xl lg:text-4xl font-normal text-[#f5f0e8] mb-7 leading-tight">
                 Become the leader your role demands.
               </h2>
-              <div className="space-y-4 text-[#7A7470] leading-relaxed text-sm">
+              <div className="space-y-4 text-[#7a8099] leading-relaxed text-sm">
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                   incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
@@ -125,22 +125,22 @@ export default function ExecutiveCoachingPage() {
       </section>
 
       {/* ── What's Included ── */}
-      <section className="px-6 lg:px-8 py-20 lg:py-28 bg-[#F0EBE4]">
+      <section className="px-6 lg:px-8 py-20 lg:py-28 bg-[#0f1525]">
         <div className="max-w-6xl mx-auto">
           <div className="mb-14">
             <p className="text-[10px] uppercase tracking-widest text-[#8B7A6A] font-medium mb-5">
               What&apos;s Included
             </p>
-            <h2 className="font-serif text-3xl lg:text-4xl font-normal text-[#111008] leading-tight max-w-xl">
+            <h2 className="font-serif text-3xl lg:text-4xl font-normal text-[#f5f0e8] leading-tight max-w-xl">
               A comprehensive container for your development.
             </h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-[#E0D8CF]">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-[#1e2538]">
             {deliverables.map((item, i) => (
-              <div key={i} className="bg-[#F0EBE4] p-7 lg:p-8">
+              <div key={i} className="bg-[#0f1525] p-7 lg:p-8">
                 <div className="w-8 h-px bg-[#8B7A6A] mb-5" />
-                <h3 className="text-sm font-medium text-[#111008] mb-2">{item.title}</h3>
-                <p className="text-xs text-[#7A7470] leading-relaxed">{item.desc}</p>
+                <h3 className="text-sm font-medium text-[#f5f0e8] mb-2">{item.title}</h3>
+                <p className="text-xs text-[#7a8099] leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -148,14 +148,14 @@ export default function ExecutiveCoachingPage() {
       </section>
 
       {/* ── Who It's For ── */}
-      <section className="px-6 lg:px-8 py-20 lg:py-28 border-b border-[#E0D8CF]">
+      <section className="px-6 lg:px-8 py-20 lg:py-28 border-b border-[#1e2538]">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
             <div className="lg:col-span-4">
               <p className="text-[10px] uppercase tracking-widest text-[#8B7A6A] font-medium mb-5">
                 Who It&apos;s For
               </p>
-              <h2 className="font-serif text-3xl lg:text-4xl font-normal text-[#111008] leading-tight">
+              <h2 className="font-serif text-3xl lg:text-4xl font-normal text-[#f5f0e8] leading-tight">
                 For those who refuse to plateau.
               </h2>
             </div>
@@ -165,11 +165,11 @@ export default function ExecutiveCoachingPage() {
                   <li
                     key={i}
                     className={`flex items-start gap-5 py-5 ${
-                      i < forWho.length - 1 ? 'border-b border-[#E0D8CF]' : ''
+                      i < forWho.length - 1 ? 'border-b border-[#1e2538]' : ''
                     }`}
                   >
                     <span className="text-[#8B7A6A] mt-0.5 flex-shrink-0">→</span>
-                    <span className="text-[#111008] text-sm leading-relaxed">{item}</span>
+                    <span className="text-[#f5f0e8] text-sm leading-relaxed">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -179,26 +179,26 @@ export default function ExecutiveCoachingPage() {
       </section>
 
       {/* ── Process ── */}
-      <section className="px-6 lg:px-8 py-20 lg:py-28 border-b border-[#E0D8CF]">
+      <section className="px-6 lg:px-8 py-20 lg:py-28 border-b border-[#1e2538]">
         <div className="max-w-6xl mx-auto">
           <div className="mb-14">
             <p className="text-[10px] uppercase tracking-widest text-[#8B7A6A] font-medium mb-5">
               How It Works
             </p>
-            <h2 className="font-serif text-3xl lg:text-4xl font-normal text-[#111008] leading-tight max-w-xl">
+            <h2 className="font-serif text-3xl lg:text-4xl font-normal text-[#f5f0e8] leading-tight max-w-xl">
               A deliberate journey, not a quick fix.
             </h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-[#E0D8CF]">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-[#1e2538]">
             {steps.map((step, i) => (
-              <div key={i} className="bg-[#F8F6F2] p-7 lg:p-8">
+              <div key={i} className="bg-[#0a0e1a] p-7 lg:p-8">
                 <span className="text-[10px] uppercase tracking-widest text-[#8B7A6A] font-medium">
                   {step.num}
                 </span>
-                <h3 className="font-serif text-xl font-normal text-[#111008] mt-5 mb-3">
+                <h3 className="font-serif text-xl font-normal text-[#f5f0e8] mt-5 mb-3">
                   {step.title}
                 </h3>
-                <p className="text-xs text-[#7A7470] leading-relaxed">{step.desc}</p>
+                <p className="text-xs text-[#7a8099] leading-relaxed">{step.desc}</p>
               </div>
             ))}
           </div>
@@ -206,28 +206,28 @@ export default function ExecutiveCoachingPage() {
       </section>
 
       {/* ── CTA ── */}
-      <section className="px-6 lg:px-8 py-20 lg:py-28 bg-[#111008]">
+      <section className="px-6 lg:px-8 py-20 lg:py-28 bg-[#06080f]">
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-[10px] uppercase tracking-widest text-[#8B7A6A] font-medium mb-7">
             Apply Now
           </p>
-          <h2 className="font-serif text-4xl md:text-5xl font-normal text-[#F8F6F2] mb-7 leading-tight">
+          <h2 className="font-serif text-4xl md:text-5xl font-normal text-[#f5f0e8] mb-7 leading-tight">
             Invest in the person doing the work.
           </h2>
-          <p className="text-[#7A7470] text-sm leading-relaxed mb-10 max-w-md mx-auto">
+          <p className="text-[#7a8099] text-sm leading-relaxed mb-10 max-w-md mx-auto">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore. I take on a limited number of coaching clients at any time.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="mailto:hello@yourname.com"
-              className="inline-block px-8 py-4 bg-[#F8F6F2] text-[#111008] text-sm font-medium hover:bg-[#E0D8CF] transition-colors"
+              className="inline-block px-8 py-4 bg-[#f5f0e8] text-[#0a0e1a] text-sm font-medium hover:bg-[#8B7A6A] hover:text-[#f5f0e8] transition-colors"
             >
               Book a Chemistry Call →
             </Link>
             <Link
               href="/services/strategic-advisory"
-              className="inline-block px-8 py-4 border border-[#2A2520] text-[#F8F6F2] text-sm font-medium hover:border-[#8B7A6A] hover:text-[#8B7A6A] transition-colors"
+              className="inline-block px-8 py-4 border border-[#1e2538] text-[#f5f0e8] text-sm font-medium hover:border-[#8B7A6A] hover:text-[#8B7A6A] transition-colors"
             >
               View Other Services
             </Link>
