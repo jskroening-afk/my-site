@@ -3,7 +3,7 @@ backend:
   repo: jskroening-afk/my-site
   branch: main
   auth_type: pkce
-  app_id: REPLACE_WITH_GITHUB_OAUTH_APP_CLIENT_ID
+  app_id: 0v23li8AKKvGeM2fR0Uo
 
 media_folder: public/uploads
 public_folder: /uploads
