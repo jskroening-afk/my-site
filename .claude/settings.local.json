@@ -3,7 +3,18 @@
     "allow": [
       "Bash(npm install:*)",
       "Bash(npm run:*)",
-      "Bash(git init:*)"
+      "Bash(git init:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(which vercel:*)",
+      "Bash(npx tinacms:*)",
+      "Bash(NEXT_PUBLIC_TINA_CLIENT_ID=f875b201-efe9-4f8b-8ba4-0b8e5c9ab3cc TINA_TOKEN=3178877f260b4d5db05c40aa934b5be22fcabf70 GITHUB_BRANCH=main npx tinacms build 2>&1)",
+      "Bash(NEXT_PUBLIC_TINA_CLIENT_ID=f875b201-efe9-4f8b-8ba4-0b8e5c9ab3cc TINA_TOKEN=3178877f260b4d5db05c40aa934b5be22fcabf70 npx tinacms build --local 2>&1)",
+      "Bash(NEXT_PUBLIC_TINA_CLIENT_ID=f875b201-efe9-4f8b-8ba4-0b8e5c9ab3cc TINA_TOKEN=3178877f260b4d5db05c40aa934b5be22fcabf70 TINA_PUBLIC_IS_LOCAL=true npx tinacms build 2>&1)",
+      "Bash(vercel whoami:*)",
+      "Bash(npx next:*)",
+      "Bash(git add:*)",
+      "Bash(grep -r \"tina/__generated__\\\\|from 'tinacms'\\\\|from \\\\\"tinacms\\\\\"\" /Users/mainframe/my-site/app /Users/mainframe/my-site/lib /Users/mainframe/my-site/components 2>/dev/null)"
     ]
   }
 }
