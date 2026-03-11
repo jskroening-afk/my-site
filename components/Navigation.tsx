@@ -98,10 +98,11 @@ export default function Navigation() {
 
               {/* Dropdown */}
               <div
-                className={`absolute top-full left-1/2 -translate-x-1/2 mt-3 w-72 bg-[#0a0e1a] border border-[#1e2538] shadow-xl transition-all duration-200 ${
+                className={`absolute top-full left-1/2 -translate-x-1/2 w-72 pt-3 transition-all duration-200 ${
                   dropdownOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-1 pointer-events-none'
                 }`}
               >
+              <div className="bg-[#0a0e1a] border border-[#1e2538] shadow-xl">
                 <div className="py-1">
                   {services.map((service, i) => (
                     <Link
@@ -116,6 +117,7 @@ export default function Navigation() {
                     </Link>
                   ))}
                 </div>
+              </div>
               </div>
             </div>
 
