@@ -22,4 +22,57 @@
   .label {
     @apply text-xs uppercase tracking-widest font-medium text-[#8B7A6A];
   }
+
+  /* MDX body prose styles */
+  .prose-tina {
+    @apply text-[#f5f0e8] leading-[1.8] text-base space-y-6;
+  }
+  .prose-tina h2 {
+    @apply font-serif text-2xl lg:text-3xl font-normal text-[#f5f0e8] pt-4;
+  }
+  .prose-tina h3 {
+    @apply font-serif text-xl font-normal text-[#f5f0e8] pt-2;
+  }
+  .prose-tina p {
+    @apply text-[#f5f0e8];
+  }
+  .prose-tina strong {
+    @apply font-semibold text-[#f5f0e8];
+  }
+  .prose-tina em {
+    @apply italic;
+  }
+  .prose-tina a {
+    @apply text-[#8B7A6A] underline underline-offset-2 hover:text-[#f5f0e8] transition-colors;
+  }
+  .prose-tina blockquote {
+    @apply border-l-2 border-[#8B7A6A] pl-6 py-1 my-8;
+  }
+  .prose-tina blockquote p {
+    @apply font-serif text-xl lg:text-2xl font-normal italic leading-relaxed;
+  }
+  .prose-tina ul {
+    @apply list-disc list-outside pl-5 space-y-2;
+  }
+  .prose-tina ol {
+    @apply list-decimal list-outside pl-5 space-y-2;
+  }
+  .prose-tina li {
+    @apply text-[#f5f0e8];
+  }
+  .prose-tina hr {
+    @apply border-[#1e2538] my-8;
+  }
+  .prose-tina code {
+    @apply bg-[#0f1525] text-[#8B7A6A] px-1.5 py-0.5 rounded text-sm font-mono;
+  }
+  .prose-tina pre {
+    @apply bg-[#0f1525] p-4 rounded overflow-x-auto;
+  }
+  .prose-tina pre code {
+    @apply bg-transparent p-0 text-[#f5f0e8];
+  }
+  .prose-tina img {
+    @apply w-full rounded;
+  }
 }

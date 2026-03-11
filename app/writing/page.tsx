@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { getAllPosts, formatDate } from '@/lib/posts'
 
 export const metadata: Metadata = {
   title: 'Writing',
@@ -7,66 +8,11 @@ export const metadata: Metadata = {
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit — essays, frameworks, and ideas.',
 }
 
-const posts = [
-  {
-    slug: 'lorem-ipsum-dolor-sit-amet',
-    category: 'Strategy',
-    title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-    date: 'March 1, 2026',
-    readTime: '5 min read',
-    excerpt:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
-  },
-  {
-    slug: 'consectetur-adipiscing-elit',
-    category: 'Leadership',
-    title: 'Consectetur adipiscing elit, sed do eiusmod tempor incididunt',
-    date: 'February 14, 2026',
-    readTime: '7 min read',
-    excerpt:
-      'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.',
-  },
-  {
-    slug: 'sed-do-eiusmod-tempor',
-    category: 'Thinking',
-    title: 'Sed do eiusmod tempor incididunt ut labore et dolore magna',
-    date: 'January 28, 2026',
-    readTime: '4 min read',
-    excerpt:
-      'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus.',
-  },
-  {
-    slug: 'ut-labore-et-dolore-magna',
-    category: 'Strategy',
-    title: 'Ut labore et dolore magna aliqua enim ad minim veniam',
-    date: 'January 10, 2026',
-    readTime: '6 min read',
-    excerpt:
-      'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.',
-  },
-  {
-    slug: 'quis-nostrud-exercitation',
-    category: 'Coaching',
-    title: 'Quis nostrud exercitation ullamco laboris nisi ut aliquip',
-    date: 'December 19, 2025',
-    readTime: '8 min read',
-    excerpt:
-      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo inventore.',
-  },
-  {
-    slug: 'excepteur-sint-occaecat',
-    category: 'Leadership',
-    title: 'Excepteur sint occaecat cupidatat non proident sunt culpa',
-    date: 'December 5, 2025',
-    readTime: '5 min read',
-    excerpt:
-      'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet consectetur adipiscing.',
-  },
-]
-
 const categories = ['All', 'Strategy', 'Leadership', 'Coaching', 'Thinking']
 
 export default function WritingPage() {
+  const posts = getAllPosts()
+
   return (
     <>
       {/* ── Header ── */}
@@ -110,9 +56,17 @@ export default function WritingPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-14">
             {posts.map((post) => (
               <article key={post.slug} className="group flex flex-col">
-                {/* Image placeholder */}
+                {/* Cover image or placeholder */}
                 <Link href={`/writing/${post.slug}`} className="block mb-5">
-                  <div className="aspect-[3/2] bg-[#1a2035] group-hover:bg-[#252d45] transition-colors" />
+                  {post.coverImage ? (
+                    <img
+                      src={post.coverImage}
+                      alt={post.title}
+                      className="aspect-[3/2] w-full object-cover"
+                    />
+                  ) : (
+                    <div className="aspect-[3/2] bg-[#1a2035] group-hover:bg-[#252d45] transition-colors" />
+                  )}
                 </Link>
 
                 {/* Meta */}
@@ -138,7 +92,7 @@ export default function WritingPage() {
 
                 {/* Date + Read link */}
                 <div className="flex items-center justify-between border-t border-[#1e2538] pt-4">
-                  <span className="text-xs text-[#7a8099]">{post.date}</span>
+                  <span className="text-xs text-[#7a8099]">{formatDate(post.date)}</span>
                   <Link
                     href={`/writing/${post.slug}`}
                     className="text-xs font-medium text-[#f5f0e8] hover:text-[#8B7A6A] transition-colors"
