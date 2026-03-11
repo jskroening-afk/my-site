@@ -1,0 +1,239 @@
+import type { Metadata } from 'next'
+import Link from 'next/link'
+
+export const metadata: Metadata = {
+  title: 'Executive Coaching',
+  description:
+    'Lorem ipsum dolor sit amet — one-on-one coaching for senior leaders and founders ready to unlock their next level.',
+}
+
+const deliverables = [
+  {
+    title: 'Bi-weekly 60-min sessions',
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
+  },
+  {
+    title: 'Personalized development plan',
+    desc: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.',
+  },
+  {
+    title: 'Between-session support',
+    desc: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.',
+  },
+  {
+    title: 'Leadership assessments',
+    desc: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.',
+  },
+  {
+    title: 'Stakeholder feedback integration',
+    desc: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.',
+  },
+  {
+    title: 'Confidential, judgment-free space',
+    desc: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.',
+  },
+]
+
+const forWho = [
+  'First-time executives stepping into senior roles',
+  'Founders navigating team and organizational complexity',
+  'Leaders preparing for a major career transition',
+  'High-performers who want to develop their edge',
+]
+
+const steps = [
+  {
+    num: '01',
+    title: 'Chemistry call',
+    desc: 'We start with a 30-minute call to explore your goals and ensure we are the right fit for each other.',
+  },
+  {
+    num: '02',
+    title: 'Deep-dive intake',
+    desc: 'A structured onboarding session and assessment to understand your context, challenges, and aspirations.',
+  },
+  {
+    num: '03',
+    title: 'Coaching engagement',
+    desc: 'Regular sessions over a 3–6 month engagement, with a clear focus and measurable outcomes.',
+  },
+  {
+    num: '04',
+    title: 'Integration & renewal',
+    desc: 'At the end of the engagement, we review progress and decide on next steps — including continuation if desired.',
+  },
+]
+
+export default function ExecutiveCoachingPage() {
+  return (
+    <>
+      {/* ── Hero ── */}
+      <section className="px-6 lg:px-8 pt-40 pb-20 lg:pt-48 lg:pb-28 bg-[#111008]">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
+            <div className="lg:col-span-8">
+              <p className="text-[10px] uppercase tracking-widest text-[#8B7A6A] font-medium mb-7">
+                Services · 02
+              </p>
+              <h1 className="font-serif text-5xl md:text-6xl lg:text-[4rem] font-normal leading-[1.1] text-[#F8F6F2]">
+                Executive Coaching
+              </h1>
+            </div>
+            <div className="lg:col-span-4">
+              <p className="text-[#7A7470] leading-relaxed text-sm">
+                One-on-one coaching for leaders who want to operate at their highest level and
+                build the clarity, confidence, and capability to navigate what comes next.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Overview ── */}
+      <section className="px-6 lg:px-8 py-20 lg:py-28 border-b border-[#E0D8CF]">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+            <div className="lg:col-span-5">
+              <div className="aspect-[4/5] bg-[#E0D8CF] w-full" />
+            </div>
+            <div className="lg:col-span-6 lg:col-start-7 lg:pt-4">
+              <p className="text-[10px] uppercase tracking-widest text-[#8B7A6A] font-medium mb-6">
+                Overview
+              </p>
+              <h2 className="font-serif text-3xl lg:text-4xl font-normal text-[#111008] mb-7 leading-tight">
+                Become the leader your role demands.
+              </h2>
+              <div className="space-y-4 text-[#7A7470] leading-relaxed text-sm">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                  nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <p>
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                  fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                  culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                  doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo inventore.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── What's Included ── */}
+      <section className="px-6 lg:px-8 py-20 lg:py-28 bg-[#F0EBE4]">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-14">
+            <p className="text-[10px] uppercase tracking-widest text-[#8B7A6A] font-medium mb-5">
+              What&apos;s Included
+            </p>
+            <h2 className="font-serif text-3xl lg:text-4xl font-normal text-[#111008] leading-tight max-w-xl">
+              A comprehensive container for your development.
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-[#E0D8CF]">
+            {deliverables.map((item, i) => (
+              <div key={i} className="bg-[#F0EBE4] p-7 lg:p-8">
+                <div className="w-8 h-px bg-[#8B7A6A] mb-5" />
+                <h3 className="text-sm font-medium text-[#111008] mb-2">{item.title}</h3>
+                <p className="text-xs text-[#7A7470] leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Who It's For ── */}
+      <section className="px-6 lg:px-8 py-20 lg:py-28 border-b border-[#E0D8CF]">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
+            <div className="lg:col-span-4">
+              <p className="text-[10px] uppercase tracking-widest text-[#8B7A6A] font-medium mb-5">
+                Who It&apos;s For
+              </p>
+              <h2 className="font-serif text-3xl lg:text-4xl font-normal text-[#111008] leading-tight">
+                For those who refuse to plateau.
+              </h2>
+            </div>
+            <div className="lg:col-span-7 lg:col-start-6">
+              <ul className="space-y-0">
+                {forWho.map((item, i) => (
+                  <li
+                    key={i}
+                    className={`flex items-start gap-5 py-5 ${
+                      i < forWho.length - 1 ? 'border-b border-[#E0D8CF]' : ''
+                    }`}
+                  >
+                    <span className="text-[#8B7A6A] mt-0.5 flex-shrink-0">→</span>
+                    <span className="text-[#111008] text-sm leading-relaxed">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Process ── */}
+      <section className="px-6 lg:px-8 py-20 lg:py-28 border-b border-[#E0D8CF]">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-14">
+            <p className="text-[10px] uppercase tracking-widest text-[#8B7A6A] font-medium mb-5">
+              How It Works
+            </p>
+            <h2 className="font-serif text-3xl lg:text-4xl font-normal text-[#111008] leading-tight max-w-xl">
+              A deliberate journey, not a quick fix.
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-[#E0D8CF]">
+            {steps.map((step, i) => (
+              <div key={i} className="bg-[#F8F6F2] p-7 lg:p-8">
+                <span className="text-[10px] uppercase tracking-widest text-[#8B7A6A] font-medium">
+                  {step.num}
+                </span>
+                <h3 className="font-serif text-xl font-normal text-[#111008] mt-5 mb-3">
+                  {step.title}
+                </h3>
+                <p className="text-xs text-[#7A7470] leading-relaxed">{step.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── CTA ── */}
+      <section className="px-6 lg:px-8 py-20 lg:py-28 bg-[#111008]">
+        <div className="max-w-3xl mx-auto text-center">
+          <p className="text-[10px] uppercase tracking-widest text-[#8B7A6A] font-medium mb-7">
+            Apply Now
+          </p>
+          <h2 className="font-serif text-4xl md:text-5xl font-normal text-[#F8F6F2] mb-7 leading-tight">
+            Invest in the person doing the work.
+          </h2>
+          <p className="text-[#7A7470] text-sm leading-relaxed mb-10 max-w-md mx-auto">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore. I take on a limited number of coaching clients at any time.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="mailto:hello@yourname.com"
+              className="inline-block px-8 py-4 bg-[#F8F6F2] text-[#111008] text-sm font-medium hover:bg-[#E0D8CF] transition-colors"
+            >
+              Book a Chemistry Call →
+            </Link>
+            <Link
+              href="/services/strategic-advisory"
+              className="inline-block px-8 py-4 border border-[#2A2520] text-[#F8F6F2] text-sm font-medium hover:border-[#8B7A6A] hover:text-[#8B7A6A] transition-colors"
+            >
+              View Other Services
+            </Link>
+          </div>
+        </div>
+      </section>
+    </>
+  )
+}
