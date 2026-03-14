@@ -11,7 +11,7 @@ export default function AboutPage() {
     <div style={{ maxWidth: '860px', marginLeft: 'auto', marginRight: 'auto', paddingLeft: '40px', paddingRight: '40px' }}>
 
       {/* Hero */}
-      <section style={{ paddingTop: '100px', paddingBottom: '60px' }}>
+      <section style={{ paddingTop: '140px', paddingBottom: '60px' }}>
         <h1 className="font-serif font-normal text-white" style={{ fontSize: '2.2rem', lineHeight: '1.2', marginBottom: '32px' }}>
           <span style={{ display: 'block' }}>You already know something is off.</span>
           <span style={{ display: 'block', marginTop: '12px' }}>You just haven&apos;t had the space to say it out loud.</span>
