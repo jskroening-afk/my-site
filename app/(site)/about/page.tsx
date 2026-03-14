@@ -12,10 +12,10 @@ export default function AboutPage() {
     <div style={{ maxWidth: '760px', marginLeft: 'auto', marginRight: 'auto', paddingLeft: '24px', paddingRight: '24px' }}>
 
       {/* Hero */}
-      <section style={{ paddingTop: '80px', paddingBottom: '40px' }}>
+      <section style={{ paddingTop: '120px', paddingBottom: '40px' }}>
         <h1
           className="font-serif font-normal text-white"
-          style={{ fontSize: 'clamp(1.6rem, 2.6vw, 2.25rem)', lineHeight: '1.15', marginBottom: '24px' }}
+          style={{ fontSize: 'clamp(1.4rem, 2.2vw, 1.9rem)', lineHeight: '1.15', marginBottom: '24px' }}
         >
           <span style={{ display: 'block' }}>You already know something is off.</span>
           <span style={{ display: 'block', marginTop: '8px' }}>You just haven&apos;t had the space to say it out loud.</span>
@@ -27,7 +27,7 @@ export default function AboutPage() {
 
       {/* Prose */}
       <section style={{ paddingTop: '40px', paddingBottom: '60px' }}>
-        <div style={{ fontSize: '1.125rem', lineHeight: '1.85', color: '#e8e8e8', display: 'flex', flexDirection: 'column', gap: '28px' }}>
+        <div style={{ fontSize: '1.125rem', lineHeight: '1.85', color: '#a8b2c8', display: 'flex', flexDirection: 'column', gap: '28px' }}>
           <p>I&apos;ve spent my whole life in the in-between.</p>
           <p>Between people who disagree. Between what a role demands and what a person can carry. Between what&apos;s working on paper and what&apos;s quietly falling apart underneath.</p>
           <p>I didn&apos;t choose that position. It chose me. In every room I&apos;ve ever been in &mdash; a small business, a hospital, a nonprofit, a school, a publishing house &mdash; I&apos;ve been the one people come to when they need to think something through, cool something down, or finally say the thing they haven&apos;t been able to say out loud.</p>
@@ -52,7 +52,7 @@ export default function AboutPage() {
 
       {/* Body prose */}
       <section style={{ paddingBottom: '60px' }}>
-        <div style={{ fontSize: '1.125rem', lineHeight: '1.85', color: '#e8e8e8', display: 'flex', flexDirection: 'column', gap: '28px' }}>
+        <div style={{ fontSize: '1.125rem', lineHeight: '1.85', color: '#a8b2c8', display: 'flex', flexDirection: 'column', gap: '28px' }}>
           <p>A few years ago, I was doing work I genuinely loved &mdash; leading editorial direction at a small media company, surrounded by books and meaningful stories and people who cared deeply about what they were building. On the surface, it looked like the right fit.</p>
           <p>Underneath: I wasn&apos;t sleeping. I couldn&apos;t stop thinking about everything that needed to be fixed &mdash; in the business, in my role, in me. I was the diplomatic voice between strongly opinionated people, day after day, absorbing everyone&apos;s tension while mine kept building. My relationships were fraying. I wasn&apos;t present with my family. I was either burned out or very close to it, and I wasn&apos;t sure I could tell the difference anymore.</p>
           <p>What helped wasn&apos;t a productivity system or a better morning routine. It was a combination of therapy, a few honest friendships, intentional silence, and &mdash; for the first time &mdash; my own coach. Someone who could see me clearly and help me tell the truth about what was actually happening.</p>
@@ -70,7 +70,7 @@ export default function AboutPage() {
 
       {/* Personal */}
       <section style={{ paddingBottom: '60px' }}>
-        <div style={{ fontSize: '1.125rem', lineHeight: '1.85', color: '#e8e8e8', display: 'flex', flexDirection: 'column', gap: '28px' }}>
+        <div style={{ fontSize: '1.125rem', lineHeight: '1.85', color: '#a8b2c8', display: 'flex', flexDirection: 'column', gap: '28px' }}>
           <p>I&apos;m based in Minneapolis. I&apos;m married with three daughters. I love books more than is probably reasonable.</p>
           <p>I find that the most important things tend to reveal themselves slowly &mdash; in extended conversations, on long walks, next to a campfire. If we end up working together, I&apos;ll tell you more stories than you can handle. But I&apos;ve learned that the deeper places are better explored face to face.</p>
           <p>Which is, in a way, the whole point.</p>
@@ -80,7 +80,7 @@ export default function AboutPage() {
       {/* CTA */}
       <section style={{ paddingTop: '60px', paddingBottom: '80px' }}>
         <hr style={{ border: 'none', borderTop: '1px solid #2a2a2a', marginBottom: '60px' }} />
-        <p style={{ fontSize: '1.125rem', lineHeight: '1.85', color: '#e8e8e8', marginBottom: '40px' }}>
+        <p style={{ fontSize: '1.125rem', lineHeight: '1.85', color: '#a8b2c8', marginBottom: '40px' }}>
           If any of this resonates, the discovery call is a real conversation &mdash; not a sales pitch. Forty-five minutes to see whether the work makes sense for where you are right now.
         </p>
         <Link
