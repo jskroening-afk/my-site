@@ -11,18 +11,30 @@ export default function AboutPage() {
   return (
     <>
       {/* ── Section 1: Hero ── */}
-      <section className="px-6 lg:px-8 pt-40 pb-20 lg:pt-48 lg:pb-24">
+      <section className="px-6 lg:px-8 pt-48 pb-16 lg:pt-56 lg:pb-20">
         <div className="max-w-6xl mx-auto">
-          <h1 className="font-serif text-5xl md:text-6xl lg:text-[4rem] font-normal leading-[1.1] text-[#f5f0e8] max-w-4xl mb-8">
-            You already know something is off. You just haven&apos;t had the space to say it out loud.
+          <h1 className="font-serif text-5xl md:text-6xl lg:text-[4.5rem] font-normal leading-[1.1] text-[#f5f0e8] max-w-4xl">
+            You already know something is off.<br />
+            You just haven&apos;t had the space to say it out loud.
           </h1>
-          <p className="text-base text-[#7a8099]">That&apos;s usually where this work begins.</p>
+        </div>
+      </section>
+
+      {/* ── Hero subline ── */}
+      <section className="px-6 lg:px-8 pb-28 lg:pb-36">
+        <div className="max-w-6xl mx-auto">
+          <p className="text-sm text-[#7a8099] text-center mt-8">
+            That&apos;s usually where this work begins.
+          </p>
         </div>
       </section>
 
       {/* ── Section 2: Narrow prose ── */}
-      <section className="px-6 lg:px-8 py-20 lg:py-28 border-t border-[#1e2538]">
-        <div className="max-w-[55ch] mx-auto space-y-6 text-[#7a8099] leading-relaxed text-[0.95rem]">
+      <section className="px-6 lg:px-8 py-20 lg:py-24 border-t border-[#1e2538]">
+        <div
+          className="mx-auto space-y-6 text-[#7a8099] text-[0.95rem]"
+          style={{ maxWidth: '520px', lineHeight: '1.8' }}
+        >
           <p>I&apos;ve spent my whole life in the in-between.</p>
           <p>
             Between people who disagree. Between what a role demands and what a person can carry.
@@ -42,27 +54,41 @@ export default function AboutPage() {
       </section>
 
       {/* ── Section 3: Pull quote ── */}
-      <section className="px-6 lg:px-8 py-20 lg:py-28">
+      <section className="px-6 lg:px-8" style={{ paddingTop: '120px', paddingBottom: '120px' }}>
         <div className="max-w-3xl mx-auto text-center">
-          <p className="font-serif text-3xl md:text-4xl lg:text-[2.5rem] font-normal italic leading-snug text-[#c9bfb0]">
+          <p
+            className="font-serif font-normal italic leading-snug"
+            style={{ fontSize: '2.25rem', color: '#C8B89A' }}
+          >
             &ldquo;What I didn&apos;t realize was that I was also quietly burning.&rdquo;
           </p>
         </div>
       </section>
 
-      {/* ── Section 4: Label ── */}
-      <section className="px-6 lg:px-8 pt-8 pb-4">
-        <div className="max-w-6xl mx-auto">
-          <p className="text-[10px] uppercase tracking-widest text-[#8B7A6A] font-medium">
+      {/* ── Section 4: Label — "What shapes the work" ── */}
+      <section className="px-6 lg:px-8" style={{ marginTop: '80px', paddingBottom: '40px' }}>
+        <div className="max-w-[680px] mx-auto">
+          <p
+            className="font-medium"
+            style={{
+              fontSize: '10px',
+              letterSpacing: '0.15em',
+              textTransform: 'uppercase',
+              color: '#666666',
+            }}
+          >
             What shapes the work
           </p>
         </div>
       </section>
 
       {/* ── Section 5: Body prose ── */}
-      <section className="px-6 lg:px-8 pt-12 pb-24 lg:pb-32">
-        <div className="max-w-6xl mx-auto">
-          <div className="max-w-2xl space-y-6 text-[#7a8099] leading-relaxed text-[0.95rem]">
+      <section className="px-6 lg:px-8 pb-24 lg:pb-32">
+        <div
+          className="mx-auto text-[#7a8099] text-[0.95rem]"
+          style={{ maxWidth: '680px', lineHeight: '1.85' }}
+        >
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '28px' }}>
             <p>
               A few years ago, I was doing work I genuinely loved &mdash; leading editorial direction
               at a small media company, surrounded by books and meaningful stories and people who
@@ -106,19 +132,30 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ── Section 6: Label ── */}
-      <section className="px-6 lg:px-8 pt-8 pb-4 border-t border-[#1e2538]">
-        <div className="max-w-6xl mx-auto">
-          <p className="text-[10px] uppercase tracking-widest text-[#8B7A6A] font-medium">
+      {/* ── Section 6: Label — "A few things worth sharing" ── */}
+      <section className="px-6 lg:px-8" style={{ marginTop: '80px', paddingBottom: '40px' }}>
+        <div className="max-w-[680px] mx-auto">
+          <p
+            className="font-medium"
+            style={{
+              fontSize: '10px',
+              letterSpacing: '0.15em',
+              textTransform: 'uppercase',
+              color: '#666666',
+            }}
+          >
             A few things worth sharing
           </p>
         </div>
       </section>
 
       {/* ── Section 7: Personal paragraphs ── */}
-      <section className="px-6 lg:px-8 pt-12 pb-24 lg:pb-32">
-        <div className="max-w-6xl mx-auto">
-          <div className="max-w-2xl space-y-6 text-[#7a8099] leading-relaxed text-[0.95rem]">
+      <section className="px-6 lg:px-8 pb-24 lg:pb-32">
+        <div
+          className="mx-auto text-[#7a8099] text-[0.95rem]"
+          style={{ maxWidth: '680px', lineHeight: '1.85' }}
+        >
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '28px' }}>
             <p>
               I&apos;m based in Minneapolis. I&apos;m married with three daughters. I love books more than
               is probably reasonable.
@@ -135,21 +172,23 @@ export default function AboutPage() {
       </section>
 
       {/* ── Section 8: CTA ── */}
-      <section className="px-6 lg:px-8 py-20 lg:py-28 border-t border-[#1e2538]">
-        <div className="max-w-6xl mx-auto">
-          <div className="max-w-2xl">
-            <p className="text-[#7a8099] leading-relaxed text-[0.95rem] mb-10">
-              If any of this resonates, the discovery call is a real conversation &mdash; not a sales
-              pitch. Forty-five minutes to see whether the work makes sense for where you are
-              right now.
-            </p>
-            <Link
-              href="/services/executive-coaching"
-              className="inline-block px-8 py-4 bg-[#f5f0e8] text-[#0a0e1a] text-sm font-medium hover:bg-[#8B7A6A] hover:text-[#f5f0e8] transition-colors"
-            >
-              Book a discovery call
-            </Link>
-          </div>
+      <section className="px-6 lg:px-8 pb-28 lg:pb-36" style={{ marginTop: '80px' }}>
+        <div className="max-w-[680px] mx-auto">
+          <hr style={{ border: 'none', borderTop: '1px solid #2a2a2a', marginBottom: '80px' }} />
+          <p
+            className="text-[#7a8099] text-[0.95rem] mb-10"
+            style={{ lineHeight: '1.85' }}
+          >
+            If any of this resonates, the discovery call is a real conversation &mdash; not a sales
+            pitch. Forty-five minutes to see whether the work makes sense for where you are
+            right now.
+          </p>
+          <Link
+            href="/services/executive-coaching"
+            className="inline-block px-8 py-4 bg-[#f5f0e8] text-[#0a0e1a] text-sm font-medium hover:bg-[#8B7A6A] hover:text-[#f5f0e8] transition-colors"
+          >
+            Book a discovery call
+          </Link>
         </div>
       </section>
     </>
