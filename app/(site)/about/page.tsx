@@ -75,8 +75,8 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section style={{ paddingTop: '60px', paddingBottom: '100px' }}>
-        <hr style={{ border: 'none', borderTop: '1px solid #2a2a2a', marginBottom: '60px' }} />
+      <section style={{ paddingTop: '20px', paddingBottom: '100px' }}>
+        <hr style={{ border: 'none', borderTop: '1px solid #2a2a2a', marginBottom: '32px' }} />
         <p style={{ fontSize: '1.0625rem', lineHeight: '1.85', color: '#a8b2c8', marginBottom: '40px' }}>
           If any of this resonates, the discovery call is a real conversation &mdash; not a sales pitch. Forty-five minutes to see whether the work makes sense for where you are right now.
         </p>
