@@ -14,9 +14,9 @@ export default function AboutPage() {
       <section style={{ paddingTop: '140px', paddingBottom: '60px' }}>
         <h1 className="font-serif font-normal text-white" style={{ fontSize: '2.2rem', lineHeight: '1.2', marginBottom: '32px' }}>
           <span style={{ display: 'block' }}>You already know something is off.</span>
-          <span style={{ display: 'block', marginTop: '12px' }}>You just haven&apos;t had the space to say it out loud.</span>
+          <span style={{ display: 'block', marginTop: '24px' }}>You just haven&apos;t had the space to say it out loud.</span>
         </h1>
-        <p style={{ fontSize: '0.95rem', color: '#7a8499', lineHeight: '1.6' }}>
+        <p style={{ fontSize: '1.1rem', color: '#a8b2c8', lineHeight: '1.6' }}>
           That&apos;s usually where this work begins.
         </p>
       </section>
