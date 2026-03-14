@@ -7,15 +7,19 @@ export const metadata: Metadata = {
     '1:1 coaching for founders and leaders in seasons of tension, transition, and lonely decision-making.',
 }
 
-const sectionStyle = {
-  paddingTop: '120px',
-  paddingBottom: '120px',
+const section: React.CSSProperties = {
+  paddingTop: '60px',
+  paddingBottom: '60px',
+}
+
+// Left-aligned column: 80px from left on desktop, max 720px wide
+const col: React.CSSProperties = {
+  maxWidth: '720px',
+  marginLeft: '0',
 }
 
 const prose: React.CSSProperties = {
   maxWidth: '720px',
-  marginLeft: 'auto',
-  marginRight: 'auto',
   fontSize: '1.125rem',
   lineHeight: '1.85',
   color: '#e8e8e8',
@@ -24,7 +28,7 @@ const prose: React.CSSProperties = {
   gap: '28px',
 }
 
-const label: React.CSSProperties = {
+const labelStyle: React.CSSProperties = {
   fontSize: '0.75rem',
   letterSpacing: '0.2em',
   textTransform: 'uppercase',
@@ -34,18 +38,11 @@ const label: React.CSSProperties = {
 
 export default function AboutPage() {
   return (
-    <div style={{
-      backgroundColor: '#0a0a0a',
-      minHeight: '100vh',
-      backgroundImage: "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E\")",
-    }}>
+    <div className="px-6 lg:px-[80px]">
 
       {/* ── Hero ── */}
-      <section
-        className="px-6 lg:px-8"
-        style={{ paddingTop: '140px', paddingBottom: '120px' }}
-      >
-        <div style={{ maxWidth: '720px', marginLeft: 'auto', marginRight: 'auto' }}>
+      <section style={section}>
+        <div style={col}>
           <h1
             className="font-serif font-normal text-white"
             style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', lineHeight: '1.1' }}
@@ -53,22 +50,17 @@ export default function AboutPage() {
             You already know something is off.<br />
             You just haven&apos;t had the space to say it out loud.
           </h1>
-          <p
-            className="mt-8"
-            style={{ fontSize: '1rem', color: '#999999', lineHeight: '1.6' }}
-          >
+          <p className="mt-8" style={{ fontSize: '1rem', color: '#999999', lineHeight: '1.6' }}>
             That&apos;s usually where this work begins.
           </p>
         </div>
       </section>
 
       {/* ── Narrow prose ── */}
-      <section className="px-6 lg:px-8" style={sectionStyle}>
+      <section style={section}>
         <div
           style={{
             maxWidth: '540px',
-            marginLeft: 'auto',
-            marginRight: 'auto',
             fontSize: '1.125rem',
             lineHeight: '1.85',
             color: '#e8e8e8',
@@ -96,13 +88,8 @@ export default function AboutPage() {
       </section>
 
       {/* ── Pull quote ── */}
-      <section
-        className="px-6 lg:px-8"
-        style={{ paddingTop: '60px', paddingBottom: '60px' }}
-      >
-        <div
-          style={{ maxWidth: '800px', marginLeft: 'auto', marginRight: 'auto', textAlign: 'center' }}
-        >
+      <section style={section}>
+        <div style={{ maxWidth: '800px', textAlign: 'center', margin: '0 auto' }}>
           <p
             className="font-serif font-normal italic"
             style={{ fontSize: 'clamp(1.5rem, 3vw, 2rem)', lineHeight: '1.4', color: '#C8B89A' }}
@@ -113,14 +100,14 @@ export default function AboutPage() {
       </section>
 
       {/* ── Label: What shapes the work ── */}
-      <section className="px-6 lg:px-8" style={{ paddingTop: '120px', paddingBottom: '40px' }}>
-        <div style={{ maxWidth: '720px', marginLeft: 'auto', marginRight: 'auto' }}>
-          <p style={label}>What shapes the work</p>
+      <section style={{ paddingTop: '60px', paddingBottom: '20px' }}>
+        <div style={col}>
+          <p style={labelStyle}>What shapes the work</p>
         </div>
       </section>
 
       {/* ── Body prose ── */}
-      <section className="px-6 lg:px-8" style={{ paddingBottom: '120px' }}>
+      <section style={{ paddingBottom: '60px' }}>
         <div style={prose}>
           <p>
             A few years ago, I was doing work I genuinely loved &mdash; leading editorial direction
@@ -165,14 +152,14 @@ export default function AboutPage() {
       </section>
 
       {/* ── Label: A few things worth sharing ── */}
-      <section className="px-6 lg:px-8" style={{ paddingTop: '120px', paddingBottom: '40px' }}>
-        <div style={{ maxWidth: '720px', marginLeft: 'auto', marginRight: 'auto' }}>
-          <p style={label}>A few things worth sharing</p>
+      <section style={{ paddingTop: '60px', paddingBottom: '20px' }}>
+        <div style={col}>
+          <p style={labelStyle}>A few things worth sharing</p>
         </div>
       </section>
 
       {/* ── Personal paragraphs ── */}
-      <section className="px-6 lg:px-8" style={{ paddingBottom: '120px' }}>
+      <section style={{ paddingBottom: '60px' }}>
         <div style={prose}>
           <p>
             I&apos;m based in Minneapolis. I&apos;m married with three daughters. I love books more than
@@ -189,9 +176,9 @@ export default function AboutPage() {
       </section>
 
       {/* ── CTA ── */}
-      <section className="px-6 lg:px-8" style={{ paddingBottom: '140px' }}>
-        <div style={{ maxWidth: '720px', marginLeft: 'auto', marginRight: 'auto' }}>
-          <hr style={{ border: 'none', borderTop: '1px solid #2a2a2a', marginBottom: '80px' }} />
+      <section style={section}>
+        <div style={{ maxWidth: '720px' }}>
+          <hr style={{ border: 'none', borderTop: '1px solid #2a2a2a', marginBottom: '60px' }} />
           <p style={{ fontSize: '1.125rem', lineHeight: '1.85', color: '#e8e8e8', marginBottom: '40px' }}>
             If any of this resonates, the discovery call is a real conversation &mdash; not a sales
             pitch. Forty-five minutes to see whether the work makes sense for where you are
