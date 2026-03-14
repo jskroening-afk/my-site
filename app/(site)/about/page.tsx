@@ -4,25 +4,25 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'About',
   description:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+    '1:1 coaching for founders and leaders in seasons of tension, transition, and lonely decision-making.',
 }
 
 const values = [
   {
     title: 'Clarity over complexity',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    desc: 'In every room I\u2019ve ever been in, I\u2019ve been the one people come to when they need to think something through, cool something down, or finally say the thing they haven\u2019t been able to say out loud.',
   },
   {
     title: 'Long-term thinking',
-    desc: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    desc: 'For a long time, I thought that was just who I was. A useful person. A good listener. Someone who could hold complexity without flinching. What I didn\u2019t realize was that I was also quietly burning.',
   },
   {
     title: 'Radical candor',
-    desc: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+    desc: 'I\u2019ve been drawn to questions of interiority \u2014 who we are beneath what we perform, what actually shapes a person, what it means to become more fully human \u2014 since I was young.',
   },
   {
     title: 'Results with integrity',
-    desc: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    desc: 'Along the way, I\u2019ve been shaped by embodied and contemplative practices \u2014 a tradition-anchored approach to inner life that takes the whole person seriously: body, mind, spirit, and the particular pressures of the world you\u2019re living in.',
   },
 ]
 
@@ -59,7 +59,7 @@ export default function AboutPage() {
             About
           </p>
           <h1 className="font-serif text-5xl md:text-6xl lg:text-[4rem] font-normal leading-[1.1] text-[#f5f0e8] max-w-3xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing.
+            I&apos;ve spent my whole life in the in-between.
           </h1>
         </div>
       </section>
@@ -75,27 +75,33 @@ export default function AboutPage() {
             {/* Text */}
             <div className="lg:col-span-7 lg:pt-4">
               <h2 className="font-serif text-3xl lg:text-4xl font-normal text-[#f5f0e8] mb-7 leading-tight">
-                Lorem ipsum dolor sit amet consectetur adipiscing elit.
+                The thing I almost missed
               </h2>
               <div className="space-y-4 text-[#7a8099] leading-relaxed text-[0.95rem]">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                  nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  A few years ago, I was doing work I genuinely loved &mdash; leading editorial
+                  direction at a small media company, surrounded by books and meaningful stories
+                  and people who cared deeply about what they were building. On the surface, it
+                  looked like the right fit.
                 </p>
                 <p>
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                  fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                  culpa qui officia deserunt mollit anim id est laborum.
+                  Underneath: I wasn&apos;t sleeping. I couldn&apos;t stop thinking about everything that
+                  needed to be fixed &mdash; in the business, in my role, in me. I was the diplomatic
+                  voice between strongly opinionated people, day after day, absorbing
+                  everyone&apos;s tension while mine kept building. My relationships were fraying.
+                  I wasn&apos;t present with my family. I was either burned out or very close to it,
+                  and I wasn&apos;t sure I could tell the difference anymore.
                 </p>
                 <p>
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                  doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo inventore
-                  veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                  What helped wasn&apos;t a productivity system or a better morning routine. It was a
+                  combination of therapy, a few honest friendships, intentional silence, and &mdash;
+                  for the first time &mdash; my own coach. Someone who could see me clearly and help
+                  me tell the truth about what was actually happening.
                 </p>
                 <p>
-                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed
-                  quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                  That experience didn&apos;t just change how I worked. It changed what I understood
+                  about the work I&apos;d always been doing for others &mdash; and what it could actually
+                  become.
                 </p>
               </div>
             </div>
@@ -117,8 +123,9 @@ export default function AboutPage() {
             </div>
             <div className="md:col-span-7 md:col-start-6 flex items-end">
               <p className="text-sm text-[#7a8099] leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                Between people who disagree. Between what a role demands and what a person can
+                carry. Between what&apos;s working on paper and what&apos;s quietly falling apart
+                underneath. I didn&apos;t choose that position. It chose me.
               </p>
             </div>
           </div>
@@ -197,11 +204,11 @@ export default function AboutPage() {
             Work Together
           </p>
           <h2 className="font-serif text-4xl md:text-5xl font-normal text-[#f5f0e8] mb-7 leading-tight">
-            Ready to do your best work?
+            If any of this resonates
           </h2>
           <p className="text-[#7a8099] leading-relaxed mb-10 text-sm max-w-lg mx-auto">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+            The discovery call is a real conversation &mdash; not a sales pitch. Forty-five minutes
+            to see whether the work makes sense for where you are right now.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

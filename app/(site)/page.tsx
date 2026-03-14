@@ -92,17 +92,16 @@ export default function HomePage() {
                 About
               </p>
               <h2 className="font-serif text-4xl lg:text-5xl font-normal text-[#f5f0e8] mb-7 leading-tight">
-                Lorem ipsum dolor sit amet consectetur.
+                I&apos;ve spent my whole life in the in-between.
               </h2>
               <p className="text-[#7a8099] leading-relaxed mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+                Between people who disagree. Between what a role demands and what a person can
+                carry. Between what&apos;s working on paper and what&apos;s quietly falling apart underneath.
               </p>
               <p className="text-[#7a8099] leading-relaxed mb-10">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                culpa qui officia deserunt mollit anim id est laborum.
+                In every room I&apos;ve ever been in, I&apos;ve been the one people come to when they need
+                to think something through, cool something down, or finally say the thing they
+                haven&apos;t been able to say out loud.
               </p>
               <Link
                 href="/about"
