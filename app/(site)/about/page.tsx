@@ -34,7 +34,11 @@ const label: React.CSSProperties = {
 
 export default function AboutPage() {
   return (
-    <div style={{ backgroundColor: '#0a0a0a', minHeight: '100vh' }}>
+    <div style={{
+      backgroundColor: '#0a0a0a',
+      minHeight: '100vh',
+      backgroundImage: "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E\")",
+    }}>
 
       {/* ── Hero ── */}
       <section
@@ -94,7 +98,7 @@ export default function AboutPage() {
       {/* ── Pull quote ── */}
       <section
         className="px-6 lg:px-8"
-        style={{ paddingTop: '160px', paddingBottom: '160px' }}
+        style={{ paddingTop: '60px', paddingBottom: '60px' }}
       >
         <div
           style={{ maxWidth: '800px', marginLeft: 'auto', marginRight: 'auto', textAlign: 'center' }}
