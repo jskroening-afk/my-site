@@ -55,7 +55,7 @@ export default function HomePage() {
       <section className="min-h-screen flex flex-col justify-center px-6 lg:px-8 pt-16">
         <div className="max-w-6xl mx-auto w-full py-28 lg:py-36">
           <p className="text-[10px] uppercase tracking-widest text-[#8B7A6A] font-medium mb-8">
-            Consultant · Coach · Speaker
+            Coach · Writer · Artist
           </p>
           <h1 className="font-serif text-5xl md:text-6xl lg:text-[4.5rem] font-normal leading-[1.1] text-[#f5f0e8] max-w-4xl mb-8">
             You give a lot. Does anyone see what it costs?
@@ -66,8 +66,9 @@ export default function HomePage() {
           </p>
           <div className="space-y-4">
             <p className="text-[10px] uppercase tracking-widest text-[#8B7A6A] font-medium">
-              Free weekly insights — join 0,000+ readers
+              For people building thoughtful lives.
             </p>
+            <p className="text-sm text-[#7a8099]">Essays on work, meaning, creativity, and faith.</p>
             <EmailSignup />
           </div>
         </div>

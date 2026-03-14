@@ -64,7 +64,7 @@ export default function Navigation() {
             href="/"
             className="font-serif text-[1.1rem] font-semibold tracking-tight text-[#f5f0e8] hover:text-[#8B7A6A] transition-colors"
           >
-            Your Name
+            Jeremy Stevens
           </Link>
 
           {/* Desktop Nav */}
