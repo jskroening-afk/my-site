@@ -15,7 +15,7 @@ export default function AboutPage() {
       <section style={{ paddingTop: '80px', paddingBottom: '40px' }}>
         <h1
           className="font-serif font-normal text-white"
-          style={{ fontSize: 'clamp(1.8rem, 3.2vw, 2.75rem)', lineHeight: '1.15', marginBottom: '24px' }}
+          style={{ fontSize: 'clamp(1.6rem, 2.6vw, 2.25rem)', lineHeight: '1.15', marginBottom: '24px' }}
         >
           <span style={{ display: 'block' }}>You already know something is off.</span>
           <span style={{ display: 'block', marginTop: '8px' }}>You just haven&apos;t had the space to say it out loud.</span>
