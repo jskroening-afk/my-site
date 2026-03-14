@@ -58,12 +58,11 @@ export default function HomePage() {
             Consultant · Coach · Speaker
           </p>
           <h1 className="font-serif text-5xl md:text-6xl lg:text-[4.5rem] font-normal leading-[1.1] text-[#f5f0e8] max-w-4xl mb-8">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            You give a lot. Does anyone see what it costs?
           </h1>
           <p className="text-base md:text-lg text-[#7a8099] max-w-lg leading-relaxed mb-12">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-            nostrud exercitation.
+            1:1 coaching for founders and leaders in seasons of tension, transition, and
+            lonely decision-making — work that keeps the business real and the human intact.
           </p>
           <div className="space-y-4">
             <p className="text-[10px] uppercase tracking-widest text-[#8B7A6A] font-medium">
