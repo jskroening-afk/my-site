@@ -7,19 +7,20 @@ export const metadata: Metadata = {
     '1:1 coaching for founders and leaders in seasons of tension, transition, and lonely decision-making.',
 }
 
+const container: React.CSSProperties = {
+  maxWidth: '760px',
+  marginLeft: 'auto',
+  marginRight: 'auto',
+  paddingLeft: '24px',
+  paddingRight: '24px',
+}
+
 const section: React.CSSProperties = {
   paddingTop: '60px',
   paddingBottom: '60px',
 }
 
-// Left-aligned column: 80px from left on desktop, max 720px wide
-const col: React.CSSProperties = {
-  maxWidth: '720px',
-  marginLeft: '0',
-}
-
 const prose: React.CSSProperties = {
-  maxWidth: '720px',
   fontSize: '1.125rem',
   lineHeight: '1.85',
   color: '#e8e8e8',
@@ -38,37 +39,25 @@ const labelStyle: React.CSSProperties = {
 
 export default function AboutPage() {
   return (
-    <div className="px-6 lg:px-[80px]">
+    <div style={container}>
 
       {/* ── Hero ── */}
       <section style={section}>
-        <div style={col}>
-          <h1
-            className="font-serif font-normal text-white"
-            style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', lineHeight: '1.1' }}
-          >
-            You already know something is off.<br />
-            You just haven&apos;t had the space to say it out loud.
-          </h1>
-          <p className="mt-8" style={{ fontSize: '1rem', color: '#999999', lineHeight: '1.6' }}>
-            That&apos;s usually where this work begins.
-          </p>
-        </div>
+        <h1
+          className="font-serif font-normal text-white"
+          style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', lineHeight: '1.1' }}
+        >
+          You already know something is off.<br />
+          You just haven&apos;t had the space to say it out loud.
+        </h1>
+        <p className="mt-8" style={{ fontSize: '1rem', color: '#999999', lineHeight: '1.6' }}>
+          That&apos;s usually where this work begins.
+        </p>
       </section>
 
       {/* ── Narrow prose ── */}
       <section style={section}>
-        <div
-          style={{
-            maxWidth: '540px',
-            fontSize: '1.125rem',
-            lineHeight: '1.85',
-            color: '#e8e8e8',
-            display: 'flex',
-            flexDirection: 'column',
-            gap: '28px',
-          }}
-        >
+        <div style={{ ...prose, maxWidth: '540px' }}>
           <p>I&apos;ve spent my whole life in the in-between.</p>
           <p>
             Between people who disagree. Between what a role demands and what a person can carry.
@@ -88,22 +77,18 @@ export default function AboutPage() {
       </section>
 
       {/* ── Pull quote ── */}
-      <section style={section}>
-        <div style={{ maxWidth: '800px', textAlign: 'center', margin: '0 auto' }}>
-          <p
-            className="font-serif font-normal italic"
-            style={{ fontSize: 'clamp(1.5rem, 3vw, 2rem)', lineHeight: '1.4', color: '#C8B89A' }}
-          >
-            &ldquo;What I didn&apos;t realize was that I was also quietly burning.&rdquo;
-          </p>
-        </div>
+      <section style={{ ...section, textAlign: 'center' }}>
+        <p
+          className="font-serif font-normal italic"
+          style={{ fontSize: 'clamp(1.5rem, 3vw, 2rem)', lineHeight: '1.4', color: '#C8B89A' }}
+        >
+          &ldquo;What I didn&apos;t realize was that I was also quietly burning.&rdquo;
+        </p>
       </section>
 
       {/* ── Label: What shapes the work ── */}
       <section style={{ paddingTop: '60px', paddingBottom: '20px' }}>
-        <div style={col}>
-          <p style={labelStyle}>What shapes the work</p>
-        </div>
+        <p style={labelStyle}>What shapes the work</p>
       </section>
 
       {/* ── Body prose ── */}
@@ -153,9 +138,7 @@ export default function AboutPage() {
 
       {/* ── Label: A few things worth sharing ── */}
       <section style={{ paddingTop: '60px', paddingBottom: '20px' }}>
-        <div style={col}>
-          <p style={labelStyle}>A few things worth sharing</p>
-        </div>
+        <p style={labelStyle}>A few things worth sharing</p>
       </section>
 
       {/* ── Personal paragraphs ── */}
@@ -177,20 +160,18 @@ export default function AboutPage() {
 
       {/* ── CTA ── */}
       <section style={section}>
-        <div style={{ maxWidth: '720px' }}>
-          <hr style={{ border: 'none', borderTop: '1px solid #2a2a2a', marginBottom: '60px' }} />
-          <p style={{ fontSize: '1.125rem', lineHeight: '1.85', color: '#e8e8e8', marginBottom: '40px' }}>
-            If any of this resonates, the discovery call is a real conversation &mdash; not a sales
-            pitch. Forty-five minutes to see whether the work makes sense for where you are
-            right now.
-          </p>
-          <Link
-            href="/services/executive-coaching"
-            className="inline-block px-8 py-4 bg-[#f5f0e8] text-[#0a0e1a] text-sm font-medium hover:bg-[#8B7A6A] hover:text-[#f5f0e8] transition-colors"
-          >
-            Book a discovery call
-          </Link>
-        </div>
+        <hr style={{ border: 'none', borderTop: '1px solid #2a2a2a', marginBottom: '60px' }} />
+        <p style={{ fontSize: '1.125rem', lineHeight: '1.85', color: '#e8e8e8', marginBottom: '40px' }}>
+          If any of this resonates, the discovery call is a real conversation &mdash; not a sales
+          pitch. Forty-five minutes to see whether the work makes sense for where you are
+          right now.
+        </p>
+        <Link
+          href="/services/executive-coaching"
+          className="inline-block px-8 py-4 bg-[#f5f0e8] text-[#0a0e1a] text-sm font-medium hover:bg-[#8B7A6A] hover:text-[#f5f0e8] transition-colors"
+        >
+          Book a discovery call
+        </Link>
       </section>
 
     </div>
