@@ -39,7 +39,7 @@ export default function AboutPage() {
       </section>
 
       {/* Section heading */}
-      <section style={{ paddingTop: '60px', paddingBottom: '16px' }}>
+      <section style={{ paddingTop: '20px', paddingBottom: '16px' }}>
         <h2 className="font-serif font-normal text-white" style={{ fontSize: '1.35rem', lineHeight: '1.3' }}>
           What shapes the work
         </h2>
@@ -59,7 +59,7 @@ export default function AboutPage() {
       </section>
 
       {/* Section heading */}
-      <section style={{ paddingTop: '60px', paddingBottom: '16px' }}>
+      <section style={{ paddingTop: '20px', paddingBottom: '16px' }}>
         <h2 className="font-serif font-normal text-white" style={{ fontSize: '1.35rem', lineHeight: '1.3' }}>
           A few things worth sharing
         </h2>
