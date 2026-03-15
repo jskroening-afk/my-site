@@ -6,79 +6,101 @@ export const metadata: Metadata = {
   description: '1:1 coaching for founders and leaders in seasons of tension, transition, and lonely decision-making.',
 }
 
+const h1Style = {
+  fontSize: '2.2rem',
+  lineHeight: '1.2',
+  fontWeight: 'normal',
+}
+
+const h2Style = {
+  fontSize: '1.35rem',
+  lineHeight: '1.3',
+  fontWeight: 'normal',
+  color: '#ffffff',
+  marginTop: '40px',
+  marginBottom: '12px',
+}
+
+const bodyStyle = {
+  fontSize: '1.0625rem',
+  lineHeight: '1.85',
+  color: '#a8b2c8',
+  display: 'flex' as const,
+  flexDirection: 'column' as const,
+  gap: '24px',
+}
+
+const pullQuoteStyle = {
+  fontSize: '1.75rem',
+  lineHeight: '1.4',
+  color: '#C8B89A',
+  fontStyle: 'italic',
+  textAlign: 'center' as const,
+  paddingTop: '40px',
+  paddingBottom: '40px',
+}
+
 export default function AboutPage() {
   return (
     <div style={{ maxWidth: '860px', marginLeft: 'auto', marginRight: 'auto', paddingLeft: '40px', paddingRight: '40px' }}>
 
       {/* Hero */}
-      <section style={{ paddingTop: '140px', paddingBottom: '60px' }}>
-        <h1 className="font-serif font-normal text-white" style={{ fontSize: '2.2rem', lineHeight: '1.2', marginBottom: '32px' }}>
-          <span style={{ display: 'block' }}>You already know something is off.</span>
-          <span style={{ display: 'block', marginTop: '24px' }}>You just haven&apos;t had the space to say it out loud.</span>
+      <section style={{ paddingTop: '120px', paddingBottom: '48px' }}>
+        <h1 className="font-serif" style={h1Style}>
+          <span style={{ display: 'block', color: '#ffffff' }}>You already know something is off.</span>
+          <span style={{ display: 'block', color: '#ffffff', marginTop: '16px' }}>You just haven't had the space to say it out loud.</span>
         </h1>
-        <p style={{ fontSize: '1.1rem', color: '#a8b2c8', lineHeight: '1.6' }}>
-          That&apos;s usually where this work begins.
+        <p style={{ fontSize: '1.0625rem', color: '#a8b2c8', lineHeight: '1.6', marginTop: '20px' }}>
+          That's usually where this work begins.
         </p>
       </section>
 
       {/* Prose */}
-      <section style={{ paddingBottom: '60px' }}>
-        <div style={{ fontSize: '1.0625rem', lineHeight: '1.85', color: '#a8b2c8', display: 'flex', flexDirection: 'column', gap: '24px' }}>
-          <p>I&apos;ve spent my whole life in the in-between.</p>
-          <p>Between people who disagree. Between what a role demands and what a person can carry. Between what&apos;s working on paper and what&apos;s quietly falling apart underneath.</p>
-          <p>I didn&apos;t choose that position. It chose me. In every room I&apos;ve ever been in &mdash; a small business, a hospital, a nonprofit, a school, a publishing house &mdash; I&apos;ve been the one people come to when they need to think something through, cool something down, or finally say the thing they haven&apos;t been able to say out loud.</p>
+      <section>
+        <div style={bodyStyle}>
+          <p>I've spent my whole life in the in-between.</p>
+          <p>Between people who disagree. Between what a role demands and what a person can carry. Between what's working on paper and what's quietly falling apart underneath.</p>
+          <p>I didn't choose that position. It chose me. In every room I've ever been in — a small business, a hospital, a nonprofit, a school, a publishing house — I've been the one people come to when they need to think something through, cool something down, or finally say the thing they haven't been able to say out loud.</p>
           <p>For a long time, I thought that was just who I was. A useful person. A good listener. Someone who could hold complexity without flinching.</p>
         </div>
       </section>
 
       {/* Pull quote */}
-      <section style={{ paddingTop: '20px', paddingBottom: '20px', textAlign: 'center' }}>
-        <p className="font-serif font-normal italic" style={{ fontSize: '1.75rem', lineHeight: '1.4', color: '#C8B89A' }}>
-          What I didn&apos;t realize was that I was also quietly burning.
+      <section>
+        <p className="font-serif" style={pullQuoteStyle}>
+          What I didn't realize was that I was also quietly burning.
         </p>
       </section>
 
-      {/* Section heading */}
-      <section style={{ paddingTop: '20px', paddingBottom: '16px' }}>
-        <h2 className="font-serif font-normal text-white" style={{ fontSize: '1.35rem', lineHeight: '1.3' }}>
-          What shapes the work
-        </h2>
-      </section>
-
-      {/* Body prose */}
-      <section style={{ paddingBottom: '60px' }}>
-        <div style={{ fontSize: '1.0625rem', lineHeight: '1.85', color: '#a8b2c8', display: 'flex', flexDirection: 'column', gap: '24px' }}>
-          <p>A few years ago, I was doing work I genuinely loved &mdash; leading editorial direction at a small media company, surrounded by books and meaningful stories and people who cared deeply about what they were building. On the surface, it looked like the right fit.</p>
-          <p>Underneath: I wasn&apos;t sleeping. I couldn&apos;t stop thinking about everything that needed to be fixed &mdash; in the business, in my role, in me. I was the diplomatic voice between strongly opinionated people, day after day, absorbing everyone&apos;s tension while mine kept building. My relationships were fraying. I wasn&apos;t present with my family. I was either burned out or very close to it, and I wasn&apos;t sure I could tell the difference anymore.</p>
-          <p>What helped wasn&apos;t a productivity system or a better morning routine. It was a combination of therapy, a few honest friendships, intentional silence, and &mdash; for the first time &mdash; my own coach. Someone who could see me clearly and help me tell the truth about what was actually happening.</p>
-          <p>That experience didn&apos;t just change how I worked. It changed what I understood about the work I&apos;d always been doing for others &mdash; and what it could actually become.</p>
-          <p>I&apos;ve been drawn to questions of interiority &mdash; who we are beneath what we perform, what actually shapes a person, what it means to become more fully human &mdash; since I was young. Those questions drove me through an eclectic career: painting company operations, healthcare, real estate, education, mentoring, nonprofits, publishing. Different industries, different problems, different people.</p>
+      {/* What shapes the work */}
+      <section>
+        <h2 className="font-serif" style={h2Style}>What shapes the work</h2>
+        <div style={bodyStyle}>
+          <p>A few years ago, I was doing work I genuinely loved — leading editorial direction at a small media company, surrounded by books and meaningful stories and people who cared deeply about what they were building. On the surface, it looked like the right fit.</p>
+          <p>Underneath: I wasn't sleeping. I couldn't stop thinking about everything that needed to be fixed — in the business, in my role, in me. I was the diplomatic voice between strongly opinionated people, day after day, absorbing everyone's tension while mine kept building. My relationships were fraying. I wasn't present with my family. I was either burned out or very close to it, and I wasn't sure I could tell the difference anymore.</p>
+          <p>What helped wasn't a productivity system or a better morning routine. It was a combination of therapy, a few honest friendships, intentional silence, and — for the first time — my own coach. Someone who could see me clearly and help me tell the truth about what was actually happening.</p>
+          <p>That experience didn't just change how I worked. It changed what I understood about the work I'd always been doing for others — and what it could actually become.</p>
+          <p>I've been drawn to questions of interiority — who we are beneath what we perform, what actually shapes a person, what it means to become more fully human — since I was young. Those questions drove me through an eclectic career: painting company operations, healthcare, real estate, education, mentoring, nonprofits, publishing. Different industries, different problems, different people.</p>
           <p>The thread running through all of it was the same: someone needed to be seen. And I kept being the person who tried to do that.</p>
-          <p>Along the way, I&apos;ve been shaped by embodied and contemplative practices &mdash; a tradition-anchored approach to inner life that takes the whole person seriously: body, mind, spirit, and the particular pressures of the world you&apos;re living in.</p>
+          <p>Along the way, I've been shaped by embodied and contemplative practices — a tradition-anchored approach to inner life that takes the whole person seriously: body, mind, spirit, and the particular pressures of the world you're living in.</p>
         </div>
       </section>
 
-      {/* Section heading */}
-      <section style={{ paddingTop: '20px', paddingBottom: '16px' }}>
-        <h2 className="font-serif font-normal text-white" style={{ fontSize: '1.35rem', lineHeight: '1.3' }}>
-          A few things worth sharing
-        </h2>
-      </section>
-
-      {/* Personal */}
-      <section style={{ paddingBottom: '60px' }}>
-        <div style={{ fontSize: '1.0625rem', lineHeight: '1.85', color: '#a8b2c8', display: 'flex', flexDirection: 'column', gap: '24px' }}>
-          <p>I&apos;m based in Minneapolis. I&apos;m married with three daughters. I love books more than is probably reasonable.</p>
-          <p>I find that the most important things tend to reveal themselves slowly &mdash; in extended conversations, on long walks, next to a campfire. If we end up working together, I&apos;ll tell you more stories than you can handle. But I&apos;ve learned that the deeper places are better explored face to face.</p>
+      {/* A few things worth sharing */}
+      <section>
+        <h2 className="font-serif" style={h2Style}>A few things worth sharing</h2>
+        <div style={bodyStyle}>
+          <p>I'm based in Minneapolis. I'm married with three daughters. I love books more than is probably reasonable.</p>
+          <p>I find that the most important things tend to reveal themselves slowly — in extended conversations, on long walks, next to a campfire. If we end up working together, I'll tell you more stories than you can handle. But I've learned that the deeper places are better explored face to face.</p>
           <p>Which is, in a way, the whole point.</p>
         </div>
       </section>
 
       {/* CTA */}
-      <section style={{ paddingTop: '20px', paddingBottom: '100px' }}>
-        <hr style={{ border: 'none', borderTop: '1px solid #2a2a2a', marginBottom: '32px' }} />
-        <p style={{ fontSize: '1.0625rem', lineHeight: '1.85', color: '#a8b2c8', marginBottom: '40px' }}>
-          If any of this resonates, the discovery call is a real conversation &mdash; not a sales pitch. Forty-five minutes to see whether the work makes sense for where you are right now.
+      <section style={{ paddingTop: '60px', paddingBottom: '100px' }}>
+        <hr style={{ border: 'none', borderTop: '1px solid #2a2a2a', marginBottom: '40px' }} />
+        <p style={{ fontSize: '1.0625rem', lineHeight: '1.85', color: '#a8b2c8', marginBottom: '32px' }}>
+          If any of this resonates, the discovery call is a real conversation — not a sales pitch. Forty-five minutes to see whether the work makes sense for where you are right now.
         </p>
         <Link
           href="/services/executive-coaching"
