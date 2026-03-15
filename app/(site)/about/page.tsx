@@ -32,7 +32,7 @@ export default function AboutPage() {
       </section>
 
       {/* Pull quote */}
-      <section style={{ paddingTop: '40px', paddingBottom: '40px', textAlign: 'center' }}>
+      <section style={{ paddingTop: '20px', paddingBottom: '20px', textAlign: 'center' }}>
         <p className="font-serif font-normal italic" style={{ fontSize: '1.75rem', lineHeight: '1.4', color: '#C8B89A' }}>
           What I didn&apos;t realize was that I was also quietly burning.
         </p>
