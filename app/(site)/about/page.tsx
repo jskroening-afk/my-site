@@ -55,8 +55,7 @@ export default function AboutPage() {
       {/* Prose */}
       <section style={{ paddingTop: '0px' }}>
         <div style={bodyStyle}>
-          <p style={{ color: '#e8e8e8' }}>That's usually where this work begins.</p>
-          <p>I've spent my whole life in the in-between.</p>
+<p>I've spent my whole life in the in-between.</p>
           <p>Between people who disagree. Between what a role demands and what a person can carry. Between what's working on paper and what's quietly falling apart underneath.</p>
           <p>I didn't choose that position. It chose me. In every room I've ever been in — a small business, a hospital, a nonprofit, a school, a publishing house — I've been the one people come to when they need to think something through, cool something down, or finally say the thing they haven't been able to say out loud.</p>
           <p>For a long time, I thought that was just who I was. A useful person. A good listener. Someone who could hold complexity without flinching.</p>
