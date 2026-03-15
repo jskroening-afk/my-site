@@ -37,7 +37,7 @@ const pullQuoteStyle = {
   fontStyle: 'italic',
   textAlign: 'center' as const,
   paddingTop: '40px',
-  paddingBottom: '40px',
+  paddingBottom: '0px',
 }
 
 export default function AboutPage() {
@@ -50,7 +50,7 @@ export default function AboutPage() {
           <span style={{ display: 'block', color: '#ffffff' }}>You already know something is off.</span>
           <span style={{ display: 'block', color: '#ffffff', marginTop: '16px' }}>You just haven't had the space to say it out loud.</span>
         </h1>
-        <p style={{ fontSize: '1.0625rem', color: '#a8b2c8', lineHeight: '1.6', marginTop: '20px' }}>
+        <p style={{ fontSize: '1.0625rem', color: '#a8b2c8', lineHeight: '1.6', marginTop: '12px' }}>
           That's usually where this work begins.
         </p>
       </section>
