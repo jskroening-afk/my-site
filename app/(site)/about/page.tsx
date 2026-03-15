@@ -45,19 +45,17 @@ export default function AboutPage() {
     <div style={{ maxWidth: '860px', marginLeft: 'auto', marginRight: 'auto', paddingLeft: '40px', paddingRight: '40px' }}>
 
       {/* Hero */}
-      <section style={{ paddingTop: '120px', paddingBottom: '48px' }}>
+      <section style={{ paddingTop: '120px', paddingBottom: '16px' }}>
         <h1 className="font-serif" style={h1Style}>
           <span style={{ display: 'block', color: '#ffffff' }}>You already know something is off.</span>
-          <span style={{ display: 'block', color: '#ffffff', marginTop: '16px' }}>You just haven't had the space to say it out loud.</span>
+          <span style={{ display: 'block', color: '#ffffff', marginTop: '20px' }}>You just haven't had the space to say it out loud.</span>
         </h1>
-        <p style={{ fontSize: '1.0625rem', color: '#a8b2c8', lineHeight: '1.6', marginTop: '12px' }}>
-          That's usually where this work begins.
-        </p>
       </section>
 
       {/* Prose */}
-      <section>
+      <section style={{ paddingTop: '0px' }}>
         <div style={bodyStyle}>
+          <p style={{ color: '#e8e8e8' }}>That's usually where this work begins.</p>
           <p>I've spent my whole life in the in-between.</p>
           <p>Between people who disagree. Between what a role demands and what a person can carry. Between what's working on paper and what's quietly falling apart underneath.</p>
           <p>I didn't choose that position. It chose me. In every room I've ever been in — a small business, a hospital, a nonprofit, a school, a publishing house — I've been the one people come to when they need to think something through, cool something down, or finally say the thing they haven't been able to say out loud.</p>
