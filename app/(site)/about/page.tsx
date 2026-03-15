@@ -10,6 +10,7 @@ const h1Style = {
   fontSize: '2.2rem',
   lineHeight: '1.2',
   fontWeight: 'normal',
+  marginBottom: '48px',
 }
 
 const h2Style = {
