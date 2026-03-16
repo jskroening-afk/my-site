@@ -9,21 +9,21 @@ export const metadata: Metadata = {
 const services = [
   {
     num: '01',
-    title: 'Strategic Advisory',
+    title: 'Private Intensive',
     href: '/services/strategic-advisory',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    desc: 'A focused, in-person, full-day engagement designed to create clarity around the decisions, challenges, and questions that matter most.',
   },
   {
     num: '02',
-    title: 'Executive Coaching',
+    title: 'Leadership Coaching',
     href: '/services/executive-coaching',
-    desc: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    desc: 'Ongoing one-to-one conversations for leaders navigating demanding work, difficult decisions, and the deeper questions shaping their lives and leadership.',
   },
   {
     num: '03',
-    title: 'Workshops & Training',
+    title: 'Cohorts',
     href: '/services/workshops-training',
-    desc: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+    desc: 'Small groups engaging in thoughtful conversation and shared reflection around a specific season, challenge, or theme. Designed for those who benefit from learning alongside others.',
   },
 ]
 
@@ -117,15 +117,12 @@ export default function HomePage() {
       {/* ── Services ── */}
       <section className="px-6 lg:px-8 py-24 lg:py-32 bg-[#06080f]">
         <div className="max-w-6xl mx-auto">
-          <p className="text-[10px] uppercase tracking-widest text-[#8B7A6A] font-medium mb-6">
-            Services
-          </p>
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16">
             <h2 className="font-serif text-4xl md:text-5xl font-normal text-[#f5f0e8] max-w-lg leading-tight">
-              Ways we can work together
+              Work with me
             </h2>
             <p className="text-[#7a8099] max-w-xs leading-relaxed text-sm md:text-right">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+              For leaders and thoughtful people navigating complex decisions, meaningful work, and the deeper questions shaping their lives.
             </p>
           </div>
 
