@@ -164,9 +164,12 @@ export default function HomePage() {
                 <p className="text-[#f5f0e8] leading-relaxed flex-1 mb-8 text-[0.95rem]">
                   {t.quote}
                 </p>
-                <div className="border-t border-[#1e2538] pt-5">
-                  <p className="text-sm font-medium text-[#f5f0e8]">{t.name}</p>
-                  <p className="text-xs text-[#7a8099] mt-1">{t.title}</p>
+                <div className="border-t border-[#1e2538] pt-5 flex items-center">
+                  <div className="w-11 h-11 rounded-full bg-[#2a2d3a] mr-3 flex-shrink-0" />
+                  <div>
+                    <p className="text-sm font-medium text-[#f5f0e8]">{t.name}</p>
+                    <p className="text-xs text-[#7a8099] mt-1">{t.title}</p>
+                  </div>
                 </div>
               </div>
             ))}
