@@ -6,18 +6,18 @@ import { usePathname } from 'next/navigation'
 
 const services = [
   {
-    name: 'Strategic Advisory',
-    href: '/services/strategic-advisory',
+    name: 'Private Intensive',
+    href: '/services/private-intensive',
     description: 'High-level strategy for organizations ready to scale',
   },
   {
-    name: 'Executive Coaching',
-    href: '/services/executive-coaching',
+    name: 'Leadership Coaching',
+    href: '/services/leadership-coaching',
     description: 'One-on-one coaching for senior leaders and founders',
   },
   {
-    name: 'Workshops & Training',
-    href: '/services/workshops-training',
+    name: 'Cohorts',
+    href: '/services/cohorts',
     description: 'Immersive programs designed for teams and groups',
   },
 ]
@@ -140,7 +140,7 @@ export default function Navigation() {
             </Link>
 
             <Link
-              href="/services/strategic-advisory"
+              href="/services/private-intensive"
               className="text-sm font-medium text-[#0a0e1a] bg-[#f5f0e8] px-5 py-2.5 hover:bg-[#8B7A6A] hover:text-[#f5f0e8] transition-colors"
             >
               Start Here →
@@ -209,7 +209,7 @@ export default function Navigation() {
           </div>
           <div className="border-t border-[#1e2538] pt-6">
             <Link
-              href="/services/strategic-advisory"
+              href="/services/private-intensive"
               className="block text-center text-sm font-medium text-[#0a0e1a] bg-[#f5f0e8] px-5 py-3.5 hover:bg-[#8B7A6A] hover:text-[#f5f0e8] transition-colors"
             >
               Start Here →

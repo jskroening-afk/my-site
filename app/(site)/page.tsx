@@ -188,7 +188,7 @@ export default function HomePage() {
             incididunt ut labore et dolore magna aliqua.
           </p>
           <Link
-            href="/services/strategic-advisory"
+            href="/services/private-intensive"
             className="inline-block px-8 py-4 bg-[#f5f0e8] text-[#0a0e1a] text-sm font-medium hover:bg-[#8B7A6A] hover:text-[#f5f0e8] transition-colors"
           >
             Start Here →
