@@ -178,20 +178,20 @@ export default function HomePage() {
       <section className="px-6 lg:px-8 py-24 lg:py-32 bg-[#0f1525]">
         <div className="max-w-2xl mx-auto text-center">
           <p className="text-[10px] uppercase tracking-widest text-[#8B7A6A] font-medium mb-7">
-            Ready to Begin?
+            Ready to begin?
           </p>
           <h2 className="font-serif text-4xl md:text-5xl font-normal text-[#f5f0e8] mb-7 leading-tight">
-            Lorem ipsum dolor sit amet consectetur adipiscing.
+            Every meaningful decision deserves a thoughtful conversation.
           </h2>
-          <p className="text-[#7a8099] leading-relaxed mb-10 text-[0.95rem]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua.
-          </p>
+          <div className="text-[#7a8099] leading-relaxed mb-10 text-[0.95rem] space-y-4">
+            <p>If you&apos;re navigating a difficult decision, carrying more responsibility than usual, or simply need space to think clearly, we can start with a conversation.</p>
+            <p>I work with a small number of leaders at a time.</p>
+          </div>
           <Link
             href="/services/private-intensive"
             className="inline-block px-8 py-4 bg-[#f5f0e8] text-[#0a0e1a] text-sm font-medium hover:bg-[#8B7A6A] hover:text-[#f5f0e8] transition-colors"
           >
-            Start Here →
+            Start a Conversation →
           </Link>
         </div>
       </section>

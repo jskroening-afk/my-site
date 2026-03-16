@@ -11,18 +11,17 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-5">
             <Link href="/" className="font-serif text-[1.1rem] font-semibold text-[#f5f0e8]">
-              Your Name
+              Jeremy Stevens
             </Link>
             <p className="mt-4 text-sm text-[#7a8099] leading-relaxed max-w-xs">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore.
+              I work with founders, executives, and leaders navigating complex decisions and meaningful responsibility.
             </p>
             <p className="mt-5 text-sm text-[#f5f0e8]">
               <a
-                href="mailto:hello@yourname.com"
+                href="mailto:hello@jeremystevens.co"
                 className="hover:text-[#8B7A6A] transition-colors"
               >
-                hello@yourname.com
+                hello@jeremystevens.co
               </a>
             </p>
           </div>
@@ -35,26 +34,26 @@ export default function Footer() {
             <ul className="space-y-3">
               <li>
                 <Link
-                  href="/services/strategic-advisory"
+                  href="/services/private-intensive"
                   className="text-sm text-[#7a8099] hover:text-[#f5f0e8] transition-colors"
                 >
-                  Strategic Advisory
+                  Private Intensives
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/services/executive-coaching"
+                  href="/services/leadership-coaching"
                   className="text-sm text-[#7a8099] hover:text-[#f5f0e8] transition-colors"
                 >
-                  Executive Coaching
+                  Leadership Coaching
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/services/workshops-training"
+                  href="/services/cohorts"
                   className="text-sm text-[#7a8099] hover:text-[#f5f0e8] transition-colors"
                 >
-                  Workshops & Training
+                  Cohorts
                 </Link>
               </li>
             </ul>
@@ -88,10 +87,10 @@ export default function Footer() {
 
         <div className="border-t border-[#1e2538] mt-14 pt-8 flex flex-col md:flex-row justify-between items-center gap-3">
           <p className="text-xs text-[#7a8099]">
-            © {year} Your Name. All rights reserved.
+            © 2026 Jeremy Stevens. All rights reserved.
           </p>
           <p className="text-xs text-[#7a8099]">
-            Built with Next.js & Tailwind CSS
+            forged in the fires of the outer darkness.
           </p>
         </div>
       </div>
