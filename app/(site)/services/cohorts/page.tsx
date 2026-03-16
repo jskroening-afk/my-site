@@ -2,61 +2,61 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Workshops & Training',
+  title: 'Cohorts',
   description:
-    'Lorem ipsum dolor sit amet — immersive programs designed to align teams and unlock collective capability.',
+    'Small groups engaging in thoughtful conversation and shared reflection around a specific season, challenge, or theme.',
 }
 
 const formats = [
   {
-    title: 'Half-day workshop',
-    duration: '4 hours',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.',
-    capacity: 'Up to 20 participants',
+    title: 'Seasonal Cohort',
+    duration: '8–10 weeks',
+    desc: 'A small group journey designed around a specific season or theme, meeting regularly for thoughtful conversation and shared reflection.',
+    capacity: 'Maximum 4 participants.',
   },
   {
-    title: 'Full-day intensive',
-    duration: '8 hours',
-    desc: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.',
-    capacity: 'Up to 30 participants',
+    title: 'Focused Cohort',
+    duration: '4–6 weeks',
+    desc: 'Shorter cohorts designed to explore a particular challenge or leadership question in a focused and practical way.',
+    capacity: 'Maximum 4 participants.',
   },
   {
-    title: 'Multi-day retreat',
-    duration: '2–3 days',
-    desc: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.',
-    capacity: 'Up to 40 participants',
+    title: 'Ongoing Leadership Circle',
+    duration: 'Quarterly',
+    desc: 'For individuals who value continuing conversation and reflection alongside a consistent group of thoughtful peers.',
+    capacity: 'Maximum 4 participants.',
   },
 ]
 
 const topics = [
-  'Strategic planning and goal alignment',
-  'Leadership development and team dynamics',
-  'Communication and decision-making frameworks',
-  'Change management and organizational resilience',
-  'Innovation and creative problem-solving',
-  'Culture design and values operationalization',
+  'Navigating complex leadership decisions',
+  'Balancing ambition, responsibility, and personal life',
+  'Leading with integrity under pressure',
+  'Finding clarity in seasons of transition',
+  'Exploring deeper questions of meaning and vocation',
+  'Developing greater self-awareness as a leader',
 ]
 
 const steps = [
   {
     num: '01',
-    title: 'Scoping call',
-    desc: 'We discuss your team, objectives, and the specific outcomes you want the workshop to deliver.',
+    title: 'Application',
+    desc: 'Interested participants share a brief description of the season they are navigating and what they hope to explore.',
   },
   {
     num: '02',
-    title: 'Custom design',
-    desc: 'I design a bespoke program tailored to your organization, industry, and specific challenges.',
+    title: 'Group Formation',
+    desc: 'Cohorts are intentionally small and thoughtfully composed to ensure meaningful conversation and shared learning.',
   },
   {
     num: '03',
-    title: 'Facilitation',
-    desc: 'I facilitate the workshop with energy, depth, and adaptability to meet your team where they are.',
+    title: 'Guided Conversations',
+    desc: 'Each session is structured around thoughtful dialogue, reflection, and exploration of real challenges participants are facing.',
   },
   {
     num: '04',
-    title: 'Follow-through',
-    desc: 'Post-workshop, I provide a written summary of key decisions, insights, and recommended next steps.',
+    title: 'Continued Growth',
+    desc: 'Many participants choose to continue the conversation through future cohorts or ongoing coaching.',
   },
 ]
 
@@ -69,16 +69,15 @@ export default function WorkshopsTrainingPage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
             <div className="lg:col-span-8">
               <p className="text-[10px] uppercase tracking-widest text-[#8B7A6A] font-medium mb-7">
-                Services · 03
+                Cohorts
               </p>
               <h1 className="font-serif text-5xl md:text-6xl lg:text-[4rem] font-normal leading-[1.1] text-[#f5f0e8]">
-                Workshops & Training
+                Small, thoughtful groups for leaders navigating complex seasons of work and life.
               </h1>
             </div>
             <div className="lg:col-span-4">
               <p className="text-[#7a8099] leading-relaxed text-sm">
-                Immersive, high-impact programs designed to align leadership teams, develop
-                organizational capability, and accelerate collective progress.
+                Cohorts bring together a small number of people for honest conversation, shared reflection, and deeper clarity about the questions they are facing.
               </p>
             </div>
           </div>
@@ -97,22 +96,20 @@ export default function WorkshopsTrainingPage() {
                 Overview
               </p>
               <h2 className="font-serif text-3xl lg:text-4xl font-normal text-[#f5f0e8] mb-7 leading-tight">
-                Great teams are built, not found.
+                You don&apos;t have to think through everything alone.
               </h2>
               <div className="space-y-4 text-[#7a8099] leading-relaxed text-sm">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                  nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Leadership can be deeply rewarding, but it can also be isolating.
                 </p>
                 <p>
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                  fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                  culpa qui officia deserunt mollit anim id est laborum.
+                  Many of the questions leaders face — about responsibility, direction, meaning, and difficult decisions — are rarely discussed openly.
                 </p>
                 <p>
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                  doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo inventore.
+                  Cohorts bring together a small group of thoughtful people navigating similar seasons of life and leadership. Through guided conversation and shared reflection, participants gain new perspective, deeper clarity, and the rare benefit of learning alongside others facing similar challenges.
+                </p>
+                <p>
+                  Each cohort is intentionally small in order to preserve honesty, depth, and meaningful dialogue.
                 </p>
               </div>
             </div>
@@ -125,10 +122,10 @@ export default function WorkshopsTrainingPage() {
         <div className="max-w-6xl mx-auto">
           <div className="mb-14">
             <p className="text-[10px] uppercase tracking-widest text-[#8B7A6A] font-medium mb-5">
-              Program Formats
+              Format
             </p>
             <h2 className="font-serif text-3xl lg:text-4xl font-normal text-[#f5f0e8] leading-tight max-w-xl">
-              Choose the format that fits your team&apos;s needs.
+              Small groups, meaningful conversation.
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-[#1e2538]">
@@ -156,14 +153,13 @@ export default function WorkshopsTrainingPage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
             <div className="lg:col-span-4">
               <p className="text-[10px] uppercase tracking-widest text-[#8B7A6A] font-medium mb-5">
-                Common Topics
+                Common Themes
               </p>
               <h2 className="font-serif text-3xl lg:text-4xl font-normal text-[#f5f0e8] leading-tight">
-                Customized to your organization.
+                The kinds of questions we explore together.
               </h2>
               <p className="text-sm text-[#7a8099] leading-relaxed mt-5">
-                Every engagement is tailored. These are common areas — but if your challenge
-                is not on this list, let&apos;s talk.
+                Each cohort explores themes related to leadership, responsibility, and meaningful work. While every group is unique, conversations often include topics such as:
               </p>
             </div>
             <div className="lg:col-span-7 lg:col-start-6">
@@ -193,7 +189,7 @@ export default function WorkshopsTrainingPage() {
               How It Works
             </p>
             <h2 className="font-serif text-3xl lg:text-4xl font-normal text-[#f5f0e8] leading-tight max-w-xl">
-              From first conversation to lasting impact.
+              A thoughtful rhythm of conversation.
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-[#1e2538]">
@@ -219,18 +215,18 @@ export default function WorkshopsTrainingPage() {
             Bring This to Your Team
           </p>
           <h2 className="font-serif text-4xl md:text-5xl font-normal text-[#f5f0e8] mb-7 leading-tight">
-            Ready to design something together?
+            Interested in joining a cohort?
           </h2>
-          <p className="text-[#7a8099] text-sm leading-relaxed mb-10 max-w-md mx-auto">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Reach out with your team
-            size, goals, and timeline — we will take it from there.
-          </p>
+          <div className="text-[#7a8099] text-sm leading-relaxed mb-10 max-w-md mx-auto space-y-4">
+            <p>Cohorts are intentionally small in order to preserve honesty, depth, and meaningful conversation.</p>
+            <p>If you&apos;re interested in participating in a future group, you can express interest below.</p>
+          </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="mailto:hello@yourname.com"
               className="inline-block px-8 py-4 bg-[#f5f0e8] text-[#0a0e1a] text-sm font-medium hover:bg-[#8B7A6A] hover:text-[#f5f0e8] transition-colors"
             >
-              Inquire About a Workshop →
+              Join the Interest List →
             </Link>
             <Link
               href="/services/executive-coaching"
