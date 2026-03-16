@@ -2,65 +2,65 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Executive Coaching',
+  title: 'Leadership Coaching',
   description:
-    'Lorem ipsum dolor sit amet — one-on-one coaching for senior leaders and founders ready to unlock their next level.',
+    'Ongoing one-to-one conversations for leaders navigating demanding work, difficult decisions, and the deeper questions shaping their lives and leadership.',
 }
 
 const deliverables = [
   {
-    title: 'Bi-weekly 60-min sessions',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
+    title: 'Weekly Coaching Conversations',
+    desc: 'Regular one-hour sessions designed to explore the real challenges and decisions you\'re facing in work and life.',
   },
   {
-    title: 'Personalized development plan',
-    desc: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.',
+    title: 'A Trusted Thinking Partner',
+    desc: 'A confidential space where you can speak freely, examine ideas honestly, and explore questions that rarely have simple answers.',
   },
   {
-    title: 'Between-session support',
-    desc: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.',
+    title: 'Clarity Around Decisions',
+    desc: 'Many conversations center around difficult choices — helping you see your situation clearly and move forward with confidence.',
   },
   {
-    title: 'Leadership assessments',
-    desc: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.',
+    title: 'Leadership and Personal Reflection',
+    desc: 'Leadership inevitably intersects with identity, responsibility, and purpose. Our work reflects that reality.',
   },
   {
-    title: 'Stakeholder feedback integration',
-    desc: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.',
+    title: 'Ongoing Perspective',
+    desc: 'Consistent dialogue over time helps you see patterns, recognize blind spots, and develop greater self-awareness as a leader.',
   },
   {
-    title: 'Confidential, judgment-free space',
-    desc: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.',
+    title: 'Optional Strategic Exploration',
+    desc: 'When appropriate, we may also explore strategic questions related to your organization, role, or long-term direction.',
   },
 ]
 
 const forWho = [
-  'First-time executives stepping into senior roles',
-  'Founders navigating team and organizational complexity',
-  'Leaders preparing for a major career transition',
-  'High-performers who want to develop their edge',
+  'Founders and executives navigating complex decisions.',
+  'Leaders entering a new season of responsibility or transition.',
+  'Individuals wrestling with deeper questions about work, meaning, or direction.',
+  'People who value honest conversation over easy answers.',
 ]
 
 const steps = [
   {
     num: '01',
-    title: 'Chemistry call',
-    desc: 'We start with a 30-minute call to explore your goals and ensure we are the right fit for each other.',
+    title: 'Introductory Conversation',
+    desc: 'We begin with a short call to explore what you\'re navigating and determine whether this work would be helpful.',
   },
   {
     num: '02',
-    title: 'Deep-dive intake',
-    desc: 'A structured onboarding session and assessment to understand your context, challenges, and aspirations.',
+    title: 'Initial Orientation',
+    desc: 'If we decide to work together, we begin with a longer conversation exploring your current challenges, responsibilities, and priorities.',
   },
   {
     num: '03',
-    title: 'Coaching engagement',
-    desc: 'Regular sessions over a 3–6 month engagement, with a clear focus and measurable outcomes.',
+    title: 'Ongoing Coaching',
+    desc: 'We meet regularly for focused conversations designed to help you think clearly and navigate the decisions in front of you.',
   },
   {
     num: '04',
-    title: 'Integration & renewal',
-    desc: 'At the end of the engagement, we review progress and decide on next steps — including continuation if desired.',
+    title: 'Periodic Reflection',
+    desc: 'At natural intervals, we step back to reflect on what has shifted and what the next season of work may require.',
   },
 ]
 
@@ -73,16 +73,18 @@ export default function ExecutiveCoachingPage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
             <div className="lg:col-span-8">
               <p className="text-[10px] uppercase tracking-widest text-[#8B7A6A] font-medium mb-7">
-                Services · 02
+                Leadership Coaching
               </p>
               <h1 className="font-serif text-5xl md:text-6xl lg:text-[4rem] font-normal leading-[1.1] text-[#f5f0e8]">
-                Executive Coaching
+                Ongoing conversations for leaders carrying real responsibility.
               </h1>
             </div>
             <div className="lg:col-span-4">
               <p className="text-[#7a8099] leading-relaxed text-sm">
-                One-on-one coaching for leaders who want to operate at their highest level and
-                build the clarity, confidence, and capability to navigate what comes next.
+                Leadership brings complex decisions, competing demands, and often very little space to think clearly.
+              </p>
+              <p className="text-[#7a8099] leading-relaxed text-sm mt-4">
+                Leadership Coaching provides that space — a steady rhythm of thoughtful dialogue designed to help you lead with clarity, courage, and integrity.
               </p>
             </div>
           </div>
@@ -101,22 +103,23 @@ export default function ExecutiveCoachingPage() {
                 Overview
               </p>
               <h2 className="font-serif text-3xl lg:text-4xl font-normal text-[#f5f0e8] mb-7 leading-tight">
-                Become the leader your role demands.
+                Leadership requires more than skill.
               </h2>
               <div className="space-y-4 text-[#7a8099] leading-relaxed text-sm">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                  nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Many leaders are surrounded by advice, expectations, and constant pressure to perform.
                 </p>
                 <p>
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                  fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                  culpa qui officia deserunt mollit anim id est laborum.
+                  What they rarely have is a space to think honestly about the deeper questions shaping their leadership and their lives.
                 </p>
                 <p>
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                  doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo inventore.
+                  Leadership Coaching provides that space.
+                </p>
+                <p>
+                  Through ongoing one-to-one conversations, we explore the decisions, tensions, and responsibilities you&apos;re carrying — helping you think clearly, act deliberately, and lead in a way that is aligned with who you truly are.
+                </p>
+                <p>
+                  Over time, this work builds not just better leadership, but deeper clarity and confidence about the path you are walking.
                 </p>
               </div>
             </div>
@@ -132,7 +135,7 @@ export default function ExecutiveCoachingPage() {
               What&apos;s Included
             </p>
             <h2 className="font-serif text-3xl lg:text-4xl font-normal text-[#f5f0e8] leading-tight max-w-xl">
-              A comprehensive container for your development.
+              A steady rhythm of thoughtful conversation.
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-[#1e2538]">
@@ -156,7 +159,7 @@ export default function ExecutiveCoachingPage() {
                 Who It&apos;s For
               </p>
               <h2 className="font-serif text-3xl lg:text-4xl font-normal text-[#f5f0e8] leading-tight">
-                For those who refuse to plateau.
+                For leaders carrying meaningful responsibility.
               </h2>
             </div>
             <div className="lg:col-span-7 lg:col-start-6">
@@ -186,7 +189,7 @@ export default function ExecutiveCoachingPage() {
               How It Works
             </p>
             <h2 className="font-serif text-3xl lg:text-4xl font-normal text-[#f5f0e8] leading-tight max-w-xl">
-              A deliberate journey, not a quick fix.
+              A steady conversation over time.
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-[#1e2538]">
@@ -212,18 +215,19 @@ export default function ExecutiveCoachingPage() {
             Apply Now
           </p>
           <h2 className="font-serif text-4xl md:text-5xl font-normal text-[#f5f0e8] mb-7 leading-tight">
-            Invest in the person doing the work.
+            Leadership is demanding work.
           </h2>
-          <p className="text-[#7a8099] text-sm leading-relaxed mb-10 max-w-md mx-auto">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore. I take on a limited number of coaching clients at any time.
-          </p>
+          <div className="text-[#7a8099] text-sm leading-relaxed mb-10 max-w-md mx-auto space-y-4">
+            <p>Few leaders have a space where they can speak honestly, think clearly, and examine the deeper questions shaping their lives and work.</p>
+            <p>Leadership Coaching creates that space.</p>
+            <p>I work with a limited number of clients at a time in order to keep the work thoughtful and personal.</p>
+          </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="mailto:hello@yourname.com"
               className="inline-block px-8 py-4 bg-[#f5f0e8] text-[#0a0e1a] text-sm font-medium hover:bg-[#8B7A6A] hover:text-[#f5f0e8] transition-colors"
             >
-              Book a Chemistry Call →
+              Schedule an Intro Conversation →
             </Link>
             <Link
               href="/services/strategic-advisory"
