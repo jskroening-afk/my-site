@@ -2,65 +2,65 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Strategic Advisory',
+  title: 'Private Intensive',
   description:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit — high-level strategy for organizations ready to scale.',
+    'A focused, in-person, full-day engagement designed to create clarity around the decisions, challenges, and questions that matter most.',
 }
 
 const deliverables = [
   {
-    title: 'Quarterly strategy sessions',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
+    title: 'Pre-Intensive Reflection',
+    desc: 'Before our session, you\'ll complete a short reflection exercise designed to clarify the key questions and challenges you want to explore.',
   },
   {
-    title: 'Market & competitive analysis',
-    desc: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.',
+    title: 'Full-Day Intensive Conversation',
+    desc: 'A focused day of thoughtful dialogue designed to untangle complexity, examine key decisions, and surface what matters most.',
   },
   {
-    title: 'Executive team alignment',
-    desc: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.',
+    title: 'Structured Exploration',
+    desc: 'Throughout the day we explore your situation from multiple angles — personal, professional, strategic, and philosophical — helping you see clearly what may have been hidden.',
   },
   {
-    title: 'Go-to-market roadmaps',
-    desc: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.',
+    title: 'Clarity Around Decisions',
+    desc: 'By the end of the day, most clients leave with greater clarity around the choices and direction in front of them.',
   },
   {
-    title: 'Written strategy documents',
-    desc: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.',
+    title: 'Follow-Up Conversation',
+    desc: 'A follow-up call several weeks later to reflect on what emerged and support your next steps.',
   },
   {
-    title: 'Ongoing Slack/email access',
-    desc: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.',
+    title: 'Optional Continued Work',
+    desc: 'If deeper work feels valuable after the intensive, we can discuss ongoing coaching.',
   },
 ]
 
 const forWho = [
-  'Founders scaling from $1M to $10M ARR',
-  'Leadership teams navigating major transitions',
-  'Executives preparing for fundraising or exit',
-  'Organizations entering new markets',
+  'Leaders carrying significant responsibility and seeking space to think clearly.',
+  'Founders or executives navigating a major decision or transition.',
+  'Individuals wrestling with deeper questions about direction, meaning, or vocation.',
+  'People who value thoughtful conversation more than quick answers.',
 ]
 
 const steps = [
   {
     num: '01',
-    title: 'Discovery call',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. We discuss your situation, goals, and whether we are the right fit.',
+    title: 'Initial Conversation',
+    desc: 'We begin with a short call to determine whether a Private Intensive would be helpful for your situation.',
   },
   {
     num: '02',
-    title: 'Diagnostic assessment',
-    desc: 'Ut enim ad minim veniam, quis nostrud exercitation. I conduct a thorough review of your business and competitive landscape.',
+    title: 'Preparation',
+    desc: 'Before our session, you\'ll complete a brief reflection exercise to help clarify the questions and priorities you want to explore.',
   },
   {
     num: '03',
-    title: 'Strategy engagement',
-    desc: 'Duis aute irure dolor in reprehenderit. We work together over a defined engagement period to develop and implement strategy.',
+    title: 'The Intensive Day',
+    desc: 'We spend a full day in focused conversation designed to create clarity around the decisions and tensions shaping your life and work.',
   },
   {
     num: '04',
-    title: 'Ongoing refinement',
-    desc: 'Excepteur sint occaecat cupidatat. I remain available as your strategic thinking partner as you execute and adapt.',
+    title: 'Integration',
+    desc: 'A follow-up conversation allows us to reflect on what emerged and support your next steps.',
   },
 ]
 
@@ -73,16 +73,18 @@ export default function StrategicAdvisoryPage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
             <div className="lg:col-span-8">
               <p className="text-[10px] uppercase tracking-widest text-[#8B7A6A] font-medium mb-7">
-                Services · 01
+                Private Intensive
               </p>
               <h1 className="font-serif text-5xl md:text-6xl lg:text-[4rem] font-normal leading-[1.1] text-[#f5f0e8]">
-                Strategic Advisory
+                A full day dedicated to the questions that matter most.
               </h1>
             </div>
             <div className="lg:col-span-4">
               <p className="text-[#7a8099] leading-relaxed text-sm">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                When you&apos;re carrying real responsibility, it can be difficult to find space to think clearly.
+              </p>
+              <p className="text-[#7a8099] leading-relaxed text-sm mt-4">
+                A Private Intensive creates that space. One focused day to step back, examine what matters most, and move forward with clarity.
               </p>
             </div>
           </div>
@@ -106,18 +108,16 @@ export default function StrategicAdvisoryPage() {
               </h2>
               <div className="space-y-4 text-[#7a8099] leading-relaxed text-sm">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                  nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Most leaders don&apos;t lack intelligence or effort. They lack space to think.
                 </p>
                 <p>
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                  fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                  culpa qui officia deserunt mollit anim id est laborum.
+                  The Private Intensive is designed to create that space.
                 </p>
                 <p>
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                  doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo inventore.
+                  Together, we spend a full day in focused conversation exploring the decisions, tensions, and questions shaping your work and life. We slow down, examine what matters most, and work toward clarity about the path ahead.
+                </p>
+                <p>
+                  Many clients arrive carrying a mix of competing priorities, difficult choices, and quiet uncertainty. By the end of the day, the goal is simple: greater clarity, renewed perspective, and a confident sense of direction.
                 </p>
               </div>
             </div>
@@ -133,7 +133,7 @@ export default function StrategicAdvisoryPage() {
               What&apos;s Included
             </p>
             <h2 className="font-serif text-3xl lg:text-4xl font-normal text-[#f5f0e8] leading-tight max-w-xl">
-              Everything you need to move forward with confidence.
+              Everything needed for a meaningful breakthrough.
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-[#1e2538]">
@@ -157,7 +157,7 @@ export default function StrategicAdvisoryPage() {
                 Who It&apos;s For
               </p>
               <h2 className="font-serif text-3xl lg:text-4xl font-normal text-[#f5f0e8] leading-tight">
-                Built for leaders at inflection points.
+                For thoughtful leaders navigating meaningful decisions.
               </h2>
             </div>
             <div className="lg:col-span-7 lg:col-start-6">
@@ -187,7 +187,7 @@ export default function StrategicAdvisoryPage() {
               How It Works
             </p>
             <h2 className="font-serif text-3xl lg:text-4xl font-normal text-[#f5f0e8] leading-tight max-w-xl">
-              A clear process from first call to full engagement.
+              A simple and thoughtful process.
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-[#1e2538]">
@@ -213,18 +213,17 @@ export default function StrategicAdvisoryPage() {
             Start Here
           </p>
           <h2 className="font-serif text-4xl md:text-5xl font-normal text-[#f5f0e8] mb-7 leading-tight">
-            Ready to get clear on your strategy?
+            Interested in a Private Intensive?
           </h2>
           <p className="text-[#7a8099] text-sm leading-relaxed mb-10 max-w-md mx-auto">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore. Spots are limited — apply below.
+            If you&apos;re navigating a challenging season and want space to think clearly with a trusted partner, I&apos;d be glad to talk.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="mailto:hello@yourname.com"
               className="inline-block px-8 py-4 bg-[#f5f0e8] text-[#0a0e1a] text-sm font-medium hover:bg-[#8B7A6A] hover:text-[#f5f0e8] transition-colors"
             >
-              Apply to Work Together →
+              Schedule an Intro Conversation →
             </Link>
             <Link
               href="/about"
