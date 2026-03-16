@@ -38,7 +38,7 @@ export default function EmailSignup() {
         type="submit"
         className="px-6 py-3.5 bg-[#f5f0e8] text-[#0a0e1a] text-sm font-medium hover:bg-[#8B7A6A] hover:text-[#f5f0e8] transition-colors whitespace-nowrap border border-[#f5f0e8] hover:border-[#8B7A6A]"
       >
-        Subscribe →
+        Read along →
       </button>
     </form>
   )

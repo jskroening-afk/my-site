@@ -55,20 +55,19 @@ export default function HomePage() {
       <section className="min-h-screen flex flex-col justify-center px-6 lg:px-8 pt-16">
         <div className="max-w-6xl mx-auto w-full py-28 lg:py-36">
           <p className="text-[10px] uppercase tracking-widest text-[#8B7A6A] font-medium mb-8">
-            Coach · Writer · Artist
+            COACH · WRITER · ARTIST
           </p>
           <h1 className="font-serif text-5xl md:text-6xl lg:text-[4.5rem] font-normal leading-[1.1] text-[#f5f0e8] max-w-4xl mb-8">
-            You give a lot. Does anyone see what it costs?
+            You carry a lot. Does anyone see what it costs?
           </h1>
           <p className="text-base md:text-lg text-[#7a8099] max-w-lg leading-relaxed mb-12">
-            1:1 coaching for founders and leaders in seasons of tension, transition, and
-            lonely decision-making — work that keeps the business real and the human intact.
+            1:1 coaching for founders and leaders navigating tension, transition, and lonely decisions — work that helps keep the business real and the human intact.
           </p>
           <div className="space-y-4">
             <p className="text-[10px] uppercase tracking-widest text-[#8B7A6A] font-medium">
-              For people building thoughtful lives.
+              FOR LEADERS BUILDING THOUGHTFUL LIVES.
             </p>
-            <p className="text-sm text-[#7a8099]">Essays on work, meaning, creativity, and faith.</p>
+            <p className="text-sm text-[#7a8099]">Weekly essays on work, meaning, creativity, and the inner life.</p>
             <EmailSignup />
           </div>
         </div>
