@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: 'Private Intensive',
@@ -97,7 +98,9 @@ export default function StrategicAdvisoryPage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
             <div className="lg:col-span-5">
               {/* Image placeholder */}
-              <div className="aspect-[4/5] bg-[#1a2035] w-full" />
+              <div className="aspect-[4/5] w-full relative">
+                <Image src="/images/private-intensive.webp" alt="Private Intensive" fill className="object-cover" />
+              </div>
             </div>
             <div className="lg:col-span-6 lg:col-start-7 lg:pt-4">
               <p className="text-[10px] uppercase tracking-widest text-[#8B7A6A] font-medium mb-6">
