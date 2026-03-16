@@ -10,19 +10,19 @@ const services = [
   {
     num: '01',
     title: 'Private Intensive',
-    href: '/services/strategic-advisory',
+    href: '/services/private-intensive',
     desc: 'A focused, in-person, full-day engagement designed to create clarity around the decisions, challenges, and questions that matter most.',
   },
   {
     num: '02',
     title: 'Leadership Coaching',
-    href: '/services/executive-coaching',
+    href: '/services/leadership-coaching',
     desc: 'Ongoing one-to-one conversations for leaders navigating demanding work, difficult decisions, and the deeper questions shaping their lives and leadership.',
   },
   {
     num: '03',
     title: 'Cohorts',
-    href: '/services/workshops-training',
+    href: '/services/cohorts',
     desc: 'Small groups engaging in thoughtful conversation and shared reflection around a specific season, challenge, or theme. Designed for those who benefit from learning alongside others.',
   },
 ]
