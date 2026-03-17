@@ -8,17 +8,17 @@ const services = [
   {
     name: 'Private Intensive',
     href: '/services/private-intensive',
-    description: 'High-level strategy for organizations ready to scale',
+    description: 'A focused day to step back, untangle complex decisions, and move forward with clarity.',
   },
   {
     name: 'Leadership Coaching',
     href: '/services/leadership-coaching',
-    description: 'One-on-one coaching for senior leaders and founders',
+    description: 'Ongoing conversations for leaders navigating responsibility, transition, and difficult decisions.',
   },
   {
     name: 'Cohorts',
     href: '/services/cohorts',
-    description: 'Immersive programs designed for teams and groups',
+    description: 'Small groups for thoughtful leaders exploring meaningful work and life together.',
   },
 ]
 
