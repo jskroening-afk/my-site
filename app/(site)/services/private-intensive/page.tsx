@@ -221,18 +221,12 @@ export default function StrategicAdvisoryPage() {
           <p className="text-[#7a8099] text-sm leading-relaxed mb-10 max-w-md mx-auto">
             If you&apos;re navigating a challenging season and want space to think clearly with a trusted partner, I&apos;d be glad to talk.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex justify-center">
             <Link
               href="mailto:hello@yourname.com"
               className="inline-block px-8 py-4 bg-[#f5f0e8] text-[#0a0e1a] text-sm font-medium hover:bg-[#8B7A6A] hover:text-[#f5f0e8] transition-colors"
             >
               Schedule an Intro Conversation →
-            </Link>
-            <Link
-              href="/about"
-              className="inline-block px-8 py-4 border border-[#1e2538] text-[#f5f0e8] text-sm font-medium hover:border-[#8B7A6A] hover:text-[#8B7A6A] transition-colors"
-            >
-              Learn More About Me
             </Link>
           </div>
         </div>

@@ -225,18 +225,12 @@ export default function ExecutiveCoachingPage() {
             <p>Leadership Coaching creates that space.</p>
             <p>I work with a limited number of clients at a time in order to keep the work thoughtful and personal.</p>
           </div>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex justify-center">
             <Link
               href="mailto:hello@yourname.com"
               className="inline-block px-8 py-4 bg-[#f5f0e8] text-[#0a0e1a] text-sm font-medium hover:bg-[#8B7A6A] hover:text-[#f5f0e8] transition-colors"
             >
               Schedule an Intro Conversation →
-            </Link>
-            <Link
-              href="/services/strategic-advisory"
-              className="inline-block px-8 py-4 border border-[#1e2538] text-[#f5f0e8] text-sm font-medium hover:border-[#8B7A6A] hover:text-[#8B7A6A] transition-colors"
-            >
-              View Other Services
             </Link>
           </div>
         </div>

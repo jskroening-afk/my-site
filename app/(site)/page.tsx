@@ -154,7 +154,7 @@ export default function HomePage() {
       <section className="px-6 lg:px-8 py-24 lg:py-32">
         <div className="max-w-6xl mx-auto">
           <p className="text-[10px] uppercase tracking-widest text-[#8B7A6A] font-medium mb-16 text-center">
-            Kind Words
+            TRUSTED BY THOUGHTFUL LEADERS
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16">
             {testimonials.map((t, i) => (

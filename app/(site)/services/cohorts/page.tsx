@@ -224,18 +224,12 @@ export default function WorkshopsTrainingPage() {
             <p>Cohorts are intentionally small in order to preserve honesty, depth, and meaningful conversation.</p>
             <p>If you&apos;re interested in participating in a future group, you can express interest below.</p>
           </div>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex justify-center">
             <Link
               href="mailto:hello@yourname.com"
               className="inline-block px-8 py-4 bg-[#f5f0e8] text-[#0a0e1a] text-sm font-medium hover:bg-[#8B7A6A] hover:text-[#f5f0e8] transition-colors"
             >
               Join the Interest List →
-            </Link>
-            <Link
-              href="/services/executive-coaching"
-              className="inline-block px-8 py-4 border border-[#1e2538] text-[#f5f0e8] text-sm font-medium hover:border-[#8B7A6A] hover:text-[#8B7A6A] transition-colors"
-            >
-              View Other Services
             </Link>
           </div>
         </div>

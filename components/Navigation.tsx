@@ -143,7 +143,7 @@ export default function Navigation() {
               href="/services/private-intensive"
               className="text-sm font-medium text-[#0a0e1a] bg-[#f5f0e8] px-5 py-2.5 hover:bg-[#8B7A6A] hover:text-[#f5f0e8] transition-colors"
             >
-              Start Here →
+              Start a Conversation
             </Link>
           </div>
 
@@ -212,7 +212,7 @@ export default function Navigation() {
               href="/services/private-intensive"
               className="block text-center text-sm font-medium text-[#0a0e1a] bg-[#f5f0e8] px-5 py-3.5 hover:bg-[#8B7A6A] hover:text-[#f5f0e8] transition-colors"
             >
-              Start Here →
+              Start a Conversation
             </Link>
           </div>
         </div>
